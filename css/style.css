@@ -24,6 +24,18 @@ header img {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: 7%;
+  top: 4%;
   right: 20%;
+}
+
+h1 {
+  padding-right: 10rem;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+hr {
+  margin-top: 0;
 }

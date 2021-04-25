@@ -18,6 +18,10 @@ footer {
   text-align: center;
 }
 
+main {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 header img {
   border-radius: 20px;
   float: right;
@@ -30,10 +34,12 @@ header img {
 
 h1 {
   padding-right: 8rem;
+  font-family: "Noto Serif", serif;
 }
 
 h2 {
   margin-bottom: 0;
+  font-family: "Roboto Mono", monospace;
 }
 
 hr {

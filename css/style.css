@@ -11,8 +11,7 @@ footer {
 
 header,
 footer {
-  border-radius: 25px;
-  border: 4px solid darkolivegreen;
+  border-color: 1rem solid darkolivegreen;
   padding: 1rem;
   background-color: burlywood;
   text-align: center;
@@ -23,21 +22,17 @@ main {
 }
 
 header img {
-  border-radius: 20px;
-  float: right;
-  width: 205px;
-  height: 245px;
-  position: absolute;
-  top: 2%;
-  right: 19%;
+  width: 180px;
+  height: auto;
 }
 
 h1 {
-  padding-right: 8rem;
+  font-size: 1.5rem;
   font-family: "Noto Serif", serif;
 }
 
 h2 {
+  font-size: 1rem;
   margin-bottom: 0;
   font-family: "Roboto Mono", monospace;
 }

@@ -25,11 +25,11 @@ main {
 header img {
   border-radius: 20px;
   float: right;
-  width: 185px;
-  height: 225px;
+  width: 205px;
+  height: 245px;
   position: absolute;
   top: 2%;
-  right: 20%;
+  right: 19%;
 }
 
 h1 {

@@ -12,10 +12,11 @@
   p {
     font-size: 0.6rem;
   }
-  .section1 {
+  .section {
     margin: 1.5em 0;
+    border-radius: 0.1em;
     border-color: black;
-    border-width: 1em;
-    background-color: red;
+    border-width: 10px;
+    background-color: gray;
   }
 }

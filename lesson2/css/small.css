@@ -41,7 +41,8 @@ h4 {
 }
 
 p {
-  font-size: 0.25rem;
+  font-size: 1em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .container {
@@ -62,4 +63,5 @@ p {
   width: 18em;
   height: auto;
   justify-items: center;
+  margin-left: 0.6em;
 }

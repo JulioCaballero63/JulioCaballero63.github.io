@@ -17,9 +17,6 @@
     grid-row: 4/ 5;
   }
 
-  p {
-    font-size: 0.6rem;
-  }
   .section {
     margin: 1.5em 0;
   }
@@ -39,6 +36,6 @@
     width: 25em;
     height: auto;
     justify-items: center;
-    margin-left: 0.5em;
+    margin-left: 0;
   }
 }

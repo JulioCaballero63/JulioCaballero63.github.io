@@ -3,6 +3,7 @@
     max-width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-gap: 1em;
     justify-content: space-evenly;
   }
@@ -16,8 +17,41 @@
   .section {
     margin: 1.5em 0;
     border-radius: 0.1em;
-    border-color: black;
     border-width: 10px;
-    background-color: gray;
+  }
+
+  header {
+    font-size: 1rem;
+    grid-column: 1 / 4;
+    grid-row: 1/ 2;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    grid-row: 3/ 4;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+  .section {
+    margin: 1.5em 0;
+  }
+  #whitespace {
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+  }
+  #proximity {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+  }
+  #alignment {
+    grid-column: 3 / 4;
+    grid-row: 2/ 3;
+  }
+  .section img {
+    width: 30em;
+    height: auto;
+    justify-items: center;
   }
 }

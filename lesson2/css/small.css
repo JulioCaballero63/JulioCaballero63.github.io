@@ -56,6 +56,7 @@ p {
 .section {
   margin: 1em 1em 1em 1em;
   background-color: rgb(226, 223, 223);
+  border: 1px solid #393a3a;
 }
 
 .section img {

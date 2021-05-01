@@ -2,10 +2,11 @@
   .container {
     max-width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: auto auto auto;
     grid-gap: 1em;
-    justify-content: space-evenly;
+    justify-items: stretch;
+    justify-content: center;
   }
   header {
     font-size: 1.2rem;
@@ -29,25 +30,36 @@
   p {
     font-size: 1.2em;
   }
-  .section {
-    margin: 1.5em;
-  }
   #whitespace {
     grid-column: 1 / 2;
     grid-row: 2/ 3;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
+
   #proximity {
     grid-column: 2 / 3;
     grid-row: 2/ 3;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
+
   #alignment {
     grid-column: 3 / 4;
     grid-row: 2/ 3;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-right: 2em;
+    margin-bottom: 1em;
   }
+
   .section img {
-    width: 30em;
+    width: 20em;
     height: auto;
-    justify-items: center;
-    margin-left: 0;
+    object-fit: contain;
   }
 }

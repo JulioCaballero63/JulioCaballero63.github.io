@@ -67,3 +67,35 @@ p {
   width: 18em;
   height: auto;
 }
+
+a:visited {
+  color: rgb(37, 96, 204);
+}
+
+footer a:link {
+  color: rgb(250, 250, 250);
+}
+
+footer a:visited {
+  color: rgb(250, 250, 250);
+}
+
+footer a:hover {
+  color: rgb(22, 200, 245);
+}
+
+footer a:link {
+  text-decoration: none;
+}
+
+footer a:visited {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  text-decoration: underline;
+}

@@ -1,39 +1,37 @@
 @media only screen and (min-width: 32.5em) {
-    .container {
-      max-width: 80%;      
-    }
-   
-    .navbar {
-        flex: auto;
-        flex-wrap: nowrap;
-        padding: 1em;      
-    }
-    h3{
-        font-size: 1em;
-    }
-     
-    .main-p {
-       font-size: 1em;
-    }
- 
-    .navbar > * :nth-child(1) {
-        flex: 1 1 10%;
-    
-    }
-    .navbar > * :nth-child(2) {
-        flex: 1 1 45%;
-      
-    }
-    
-    .navbar >* :nth-child(3) {
-        flex: 1 1 45%;
-       
-    }
-    .nav-list {
-        text-align: right;
-    }
-    h1 {
-        font-size: 1em;
-        padding-left: 1em;
-    }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    flex: auto;
+    flex-wrap: nowrap;
+    padding: 1em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+
+  .main-p {
+    font-size: 1em;
+  }
+
+  .navbar > * :nth-child(1) {
+    flex: 1 1 10%;
+  }
+  .navbar > * :nth-child(2) {
+    flex: 1 1 45%;
+  }
+
+  .navbar > * :nth-child(3) {
+    flex: 1 1 45%;
+  }
+  .nav-list {
+    text-align: right;
+  }
+  h1 {
+    font-size: 1em;
+    padding-left: 1em;
+  }
 }

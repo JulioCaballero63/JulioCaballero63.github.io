@@ -1,44 +1,38 @@
 @media only screen and (min-width: 60em) {
-    .container {
-      max-width: 80%;
-        }
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 
-        h1 {
-            font-size: 1.5em;
-            font-weight: 1000;
-            padding-left: 2em;
-         }
+  h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding-left: 2em;
+  }
 
-         h3{
-             font-size: 1em;
-         }
-          
-         .main-p {
-            font-size: 1em;
-         }
+  h3 {
+    font-size: 1em;
+  }
 
-         .navbar {
-            
-            flex-wrap: nowrap;           
-        }
+  .main-p {
+    font-size: 1em;
+  }
 
-         .icon {
-             max-width: 5em;
-         }
+  .navbar {
+    flex-wrap: nowrap;
+  }
 
-         p {
-            font-size: 1em;
-            font-family: 'Noto Sans', sans-serif;
-        }
+  .icon {
+    max-width: 5em;
+  }
 
+  p {
+    font-size: 1em;
+    font-family: "Noto Sans", sans-serif;
+  }
 
-        .nav-list {
-            font-size: 1.2em;
-           text-align: right;
-        }
-
-
-
-
-
-    }
+  .nav-list {
+    font-size: 1.2em;
+    text-align: right;
+  }
+}

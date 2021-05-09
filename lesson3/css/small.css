@@ -3,117 +3,118 @@ font-family: 'Noto Sans', sans-serif;
 font-family: 'Noto Serif', serif;
 */
 
-* { 
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
-    max-width: 90%;
+  max-width: 90%;
 }
 header,
 footer {
   font-family: "Montserrat", serif;
   background-color: rgba(226, 199, 124, 0.911);
 }
-  h1 {
-     font-size: 1em;
-     font-weight: 700;
-     padding-left: 2em;
-  }
- 
+h1 {
+  font-size: 1em;
+  font-weight: 700;
+  padding-left: 2em;
+}
 
 h3 {
-    font-family: 'Noto Serif', serif;
-    font-size: .7em;
-    text-align: left;
-    padding-bottom: .5em;
-    padding-left: .5em;
-  }
+  font-family: "Noto Serif", serif;
+  font-size: 0.7em;
+  text-align: left;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+}
 
-  main {
-      padding: 2em;
-      background-color: beige;
-  }
+main {
+  padding: 2em;
+  background-color: beige;
+}
 
+main ul {
+  padding-left: 3em;
+}
 p {
-    font-size: .7em;
-    font-family: 'Noto Sans', sans-serif;
+  font-size: 0.7em;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .main-p {
-    padding-bottom: .5em;
-    padding-left: .5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em;
 }
 
-.navbar > *{
-    flex: 1 1 100%;
+.navbar > * {
+  flex: 1 1 100%;
 }
 .navbar > *:nth-child(1) {
-        flex: 1 1 30%;}
+  flex: 1 1 30%;
+}
 
 .navbar > *:nth-child(2) {
-    flex: 1 1 70%;
+  flex: 1 1 70%;
 }
 
 .navbar > *:nth-child(3) {
-    flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .icon {
-    max-width: 3em;
+  max-width: 3em;
 }
 
-.nav-list {    
-   list-style-type: none;   
-   font-weight: 700;
-   font-size: .7em;
+.nav-list {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 0.7em;
 }
 
 .nav-list .nav-item {
-    display: inline-block;
-    padding: 1em .5em;
+  display: inline-block;
+  padding: 0.5em;
 }
 
-
 a:link {
-    color: black;
-    text-decoration: none;  
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    color:blueviolet;
+  color: blueviolet;
 }
 
 a:visited {
-    color: black;
+  color: black;
 }
 
 .body-image {
-    max-width: 10em;
+  max-width: 10em;
 }
 
 footer {
-  
-    padding: 1em;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  padding: 1em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    color: blueviolet;
-  }
+  text-decoration: underline;
+  color: blueviolet;
+}
 
-  footer a:active {
-    text-decoration: underline;
-  }
+footer a:active {
+  text-decoration: underline;
+}

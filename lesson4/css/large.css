@@ -28,6 +28,11 @@
   .nav-items li:first-child {
     display: none;
   }
+
+  .comtainer h2 {
+    font-size: 1.8em;
+  }
+
   footer {
     font-size: 1.4em;
   }

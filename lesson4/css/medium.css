@@ -40,6 +40,10 @@
     flex-direction: column;
   }
 
+  .comtainer h2 {
+    font-size: 1.5em;
+  }
+
   .container p:nth-child(5) {
     margin-bottom: 1em;
   }

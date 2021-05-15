@@ -75,3 +75,18 @@ nav {
 .responsive li {
   display: block;
 }
+
+footer {
+  background-color: rgba(231, 214, 137, 0.7);
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0.1em;
+}
+
+footer p:first-child {
+  margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+  margin-top: 0;
+}

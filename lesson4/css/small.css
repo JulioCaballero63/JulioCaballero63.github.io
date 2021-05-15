@@ -76,10 +76,16 @@ nav {
   display: block;
 }
 
+.container h2 {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
 .container p {
   margin: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(180, 179, 179, 0.89);
+  background-color: rgba(214, 212, 212, 0.973);
   padding: 1em;
   font-size: 1.1em;
 }

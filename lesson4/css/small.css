@@ -37,7 +37,6 @@ header img {
 
 nav {
   margin: 0 auto;
-  max-width: 760px;
   background-color: rgba(202, 179, 78, 0.99);
 }
 
@@ -51,7 +50,7 @@ nav {
   display: block;
 }
 .nav-items li {
-  /* display: none; */
+  display: none;
 }
 .nav-items a {
   display: block;
@@ -63,19 +62,16 @@ nav {
   font-size: 1.6em;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* .nav-items a:hover {
+.nav-items a:hover {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgba(0, 0, 0, 0.5);
-} */
-nav ul li .active a {
+}
+
+.nav-items li a:active {
+  color: rgba(6, 130, 247, 0.938);
   background-color: rgba(0, 0, 0, 0.2);
-  color: rgba(255, 255, 255, 0.9);
 }
 
-.nav-items a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.responsive {
+.responsive li {
   display: block;
 }

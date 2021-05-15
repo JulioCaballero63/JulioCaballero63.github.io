@@ -28,4 +28,7 @@
   .nav-items li:first-child {
     display: none;
   }
+  footer {
+    font-size: 1.4em;
+  }
 }

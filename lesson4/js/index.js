@@ -1,10 +1,10 @@
-const hambutton = document.querySelector(".ham");
-const mainnav = document.querySelector(".navigation");
+const menu = document.querySelector(".hamburger");
+const navigation = document.querySelector(".nav-items");
 
-hambutton.addEventListener(
+menu.addEventListener(
   "click",
   () => {
-    mainnav.classList.toggle("responsive");
+    navigation.classList.toggle("responsive");
   },
   false
 );

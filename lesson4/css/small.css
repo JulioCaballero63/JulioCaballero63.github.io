@@ -17,7 +17,7 @@ header img {
   height: auto;
 }
 
-.headings {
+.header {
   display: flex;
   flex-direction: column;
 }
@@ -27,7 +27,7 @@ header img {
   margin: 0 0 0 17px;
 }
 
-.m {
+.moto {
   font-style: italic;
   letter-spacing: 1pt;
   color: forestgreen;

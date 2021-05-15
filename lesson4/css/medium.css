@@ -40,13 +40,6 @@
     flex-direction: column;
   }
 
-  .container p {
-    margin: 0.5em;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: rgba(180, 179, 179, 0.89);
-    padding: 1em;
-  }
-
   .container p:nth-child(4) {
     margin-bottom: 1em;
   }

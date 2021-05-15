@@ -76,11 +76,23 @@ nav {
   display: block;
 }
 
+.container p {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(180, 179, 179, 0.89);
+  padding: 1em;
+  font-size: 1.1em;
+}
+
 footer {
   background-color: rgba(231, 214, 137, 0.7);
   text-align: center;
   margin-top: 0.5em;
   padding: 0.1em;
+}
+
+footer p {
+  font-size: 0.9em;
 }
 
 footer p:first-child {

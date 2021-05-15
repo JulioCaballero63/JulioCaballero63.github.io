@@ -10,7 +10,7 @@ font-family: 'Noto Serif', serif;
 }
 
 .container {
-  max-width: 90%;
+  max-width: 100%;
 }
 header,
 footer {
@@ -54,6 +54,11 @@ p {
   align-items: center;
   flex-wrap: wrap;
   padding: 1em;
+}
+
+.active {
+  color: red;
+  background-color: white;
 }
 
 .navbar > * {

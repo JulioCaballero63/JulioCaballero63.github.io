@@ -73,7 +73,7 @@ main {
   background-color: rgba(245, 241, 210, 0.986);
 }
 p {
-  font-size: 0.7em;
+  font-size: 1em;
   font-family: "Noto Sans", san-serif;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
@@ -97,7 +97,7 @@ p {
 }
 
 .audience {
-  font-size: 0.7em;
+  font-size: 1em;
   font-family: "Noto Sans", sans-serif;
   padding-bottom: 0.5em;
   padding-left: 2em;

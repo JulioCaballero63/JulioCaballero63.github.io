@@ -1,38 +1,39 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 80em) {
   .container {
     max-width: 80%;
     margin: 0 auto;
+    background-color: tomato;
+  }
+  header img {
+    width: 100px;
   }
 
   h1 {
-    font-size: 1.5em;
-    font-weight: 900;
+    font-size: 2em;
+    font-weight: bold;
     padding-left: 2em;
   }
 
-  h3 {
-    font-size: 1em;
+  .nav-list {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-weight: lighter;
   }
 
-  .main-p {
-    font-size: 1em;
+  .nav-list li {
+    display: block;
+    flex: auto;
+    text-align: center;
   }
 
-  .navbar {
-    flex-wrap: nowrap;
-  }
-
-  .icon {
-    max-width: 5em;
+  h2 {
+    font-size: 1.4em;
   }
 
   p {
     font-size: 1em;
     font-family: "Noto Sans", sans-serif;
-  }
-
-  .nav-list {
-    font-size: 1.2em;
-    text-align: right;
   }
 }

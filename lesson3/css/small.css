@@ -9,98 +9,84 @@ font-family: 'Noto Serif', serif;
   margin: 0;
 }
 
-.container {
-  max-width: 100%;
-}
-header,
-footer {
-  font-family: "Montserrat", serif;
-  background-color: rgba(226, 199, 124, 0.911);
-}
-h1 {
-  font-size: 1em;
-  font-weight: 700;
-  padding-left: 2em;
+header {
+  background-color: rgba(231, 214, 137, 0.7);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h3 {
+header img {
+  width: 60px;
+  height: auto;
+}
+
+header h1 {
+  font-family: "Montserrat", serif;
+  font-size: 1.2em;
+  margin: auto;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: rgba(202, 179, 78, 0.99);
+}
+
+.nav-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+h2 {
   font-family: "Noto Serif", serif;
-  font-size: 0.7em;
+  font-size: 1em;
   text-align: left;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1.3em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.nav-list li a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-list li a:active {
+  color: rgba(6, 130, 247, 0.938);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 main {
   padding: 2em;
   background-color: rgba(245, 241, 210, 0.986);
 }
-
-main ul {
-  padding-left: 3em;
-}
 p {
   font-size: 0.7em;
   font-family: "Noto Sans", sans-serif;
-}
-
-.main-p {
   padding-bottom: 0.5em;
   padding-left: 0.5em;
-}
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1em;
-}
-
-.navbar > * {
-  flex: 1 1 100%;
-}
-.navbar > *:nth-child(1) {
-  flex: 1 1 30%;
-}
-
-.navbar > *:nth-child(2) {
-  flex: 1 1 70%;
-}
-
-.navbar > *:nth-child(3) {
-  flex: 1 1 100%;
-}
-
-.icon {
-  max-width: 3em;
-}
-
-.nav-list {
-  list-style-type: none;
-  font-weight: 700;
-  font-size: 0.7em;
-}
-
-.nav-list .nav-item {
-  display: inline-block;
-  padding: 0.5em;
-}
-
-a:link {
-  color: black;
-  text-decoration: none;
-}
-
-a:hover {
-  color: blueviolet;
-}
-
-a:visited {
-  color: black;
 }
 
 .body-image {
   max-width: 10em;
+}
+
+.audience {
+  font-size: 0.7em;
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
 }
 
 .color-palette {
@@ -132,6 +118,7 @@ a:visited {
 }
 
 footer {
+  background-color: rgba(231, 214, 137, 0.7);
   padding: 1em;
   text-align: center;
   justify-content: center;

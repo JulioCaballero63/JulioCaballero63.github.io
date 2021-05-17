@@ -1,16 +1,34 @@
 @media only screen and (min-width: 32.5em) {
   .container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
+    background-color: tomato;
+  }
+  header img {
+    width: 80px;
+  }
+  header h1 {
+    font-size: 1.6rem;
   }
 
-  .navbar {
-    flex: auto;
-    flex-wrap: nowrap;
-    padding: 1em;
-  }
   h2 {
     font-size: 1.2em;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.5em 0;
+  }
+  .nav-list a {
+    border: none;
+    font-size: 1.12em;
+  }
+
+  .nav-list li {
+    display: block;
+    flex: auto;
+    text-align: center;
   }
 
   .main-p {
@@ -30,8 +48,12 @@
   .nav-list {
     text-align: right;
   }
-  h1 {
-    font-size: 1em;
-    padding-left: 1em;
+
+  footer {
+    flex-direction: row;
+  }
+
+  footer p {
+    font-size: 0.8em;
   }
 }

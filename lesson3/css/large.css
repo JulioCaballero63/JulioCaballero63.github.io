@@ -1,31 +1,21 @@
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: 60em) {
   .container {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
-    background-color: tomato;
+    background-color: rgb(18, 85, 185);
   }
   header img {
     width: 100px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
-    padding-left: 2em;
+    padding: auto;
   }
 
   .nav-list {
-    display: flex;
-    margin-bottom: 0;
-    padding: 0.5em;
-    font-size: 1.2em;
-    font-weight: lighter;
-  }
-
-  .nav-list li {
-    display: block;
-    flex: auto;
-    text-align: center;
+    font-size: 1.4em;
   }
 
   h2 {
@@ -33,7 +23,7 @@
   }
 
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: "Noto Sans", sans-serif;
   }
 }

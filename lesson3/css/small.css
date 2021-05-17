@@ -13,6 +13,7 @@ header {
   background-color: rgba(231, 214, 137, 0.7);
   padding: 5px 0;
   display: flex;
+  flex: 1 1 100;
   align-items: center;
   justify-content: center;
 }
@@ -23,9 +24,10 @@ header img {
 }
 
 header h1 {
-  font-family: "Montserrat", serif;
+  font-family: "Noto Serif", serif;
   font-size: 1.2em;
-  margin: auto;
+  margin-left: 1em;
+  font-weight: bold;
 }
 
 nav {
@@ -73,9 +75,22 @@ main {
 }
 p {
   font-size: 0.7em;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans", san-serif;
   padding-bottom: 0.5em;
   padding-left: 0.5em;
+  font-weight: normal;
+}
+
+.typo-hf {
+  font-family: "Noto Serif", serif;
+}
+
+.typo-h2 {
+  font-family: "Noto Serif", serif;
+}
+
+.typo-p {
+  font-family: "Noto Sans", sans-serif;
 }
 
 .body-image {
@@ -118,11 +133,14 @@ p {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(231, 214, 137, 0.7);
   padding: 1em;
   text-align: center;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 footer a:hover {

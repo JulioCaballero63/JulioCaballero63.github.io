@@ -13,7 +13,7 @@ header {
   background-color: rgba(231, 214, 137, 0.7);
   padding: 5px 0;
   display: flex;
-  flex: 1 1 100;
+  flex: 1 1 100%;
   align-items: center;
   justify-content: center;
 }

@@ -15,12 +15,10 @@
   header img {
     border-radius: 20px;
     float: right;
-    width: 205px;
+    width: 200px;
     height: auto;
     position: absolute;
     top: 2%;
-    right: 19%;
-    max-width: 100%;
-    display: block;
+    right: 2%;
   }
 }

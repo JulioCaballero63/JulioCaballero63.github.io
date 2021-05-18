@@ -2,16 +2,20 @@ body {
   font-size: 16px;
 }
 
-header,
+/* header,
 main,
 footer {
   max-width: 800px;
   margin: 0 auto;
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 header,
 footer {
-  border-color: 1rem solid darkolivegreen;
   padding: 1rem;
   background-color: burlywood;
   text-align: center;
@@ -22,8 +26,9 @@ main {
 }
 
 header img {
-  width: 180px;
+  width: 150px;
   height: auto;
+  margin: 0 auto;
 }
 
 h1 {
@@ -35,6 +40,14 @@ h2 {
   font-size: 1rem;
   margin-bottom: 0;
   font-family: "Roboto Mono", monospace;
+}
+
+footer p:first-child {
+  margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+  margin-top: 0;
 }
 
 hr {

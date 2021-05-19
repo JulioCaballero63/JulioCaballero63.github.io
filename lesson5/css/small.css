@@ -1,54 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
 body {
-  height: 100vh;
+  background-color: rgba(231, 214, 137, 0.2);
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: rgba(231, 214, 137, 0.7);
+  padding: 5px 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  font-family: Acme, Arial, sans-serif;
 }
 
-main {
-  margin: 0.5rem;
-  border: 1px solid #999;
-  padding: 0.5rem;
-  background-color: #bed;
-  display: grid;
-  grid-template-columns: 1;
+header img {
+  width: 60px;
+  height: auto;
 }
 
-input,
-button {
-  padding: 0.5rem;
-}
-
-label {
-  font-size: 0.8rem;
-}
-
-.list {
-  margin: 1rem;
-  border: 1px solid #bbb;
-}
-ul {
-  margin: 1rem;
-  list-style: none;
-}
-
-li {
+.header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
 }
 
-.list ul li button {
-  color: rgba(255, 0, 0, 0.918);
+.header h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+  margin: 0 0 0 0.5em;
+}
+
+.motto {
+  font-family: "Noto Serif", serif;
+  color: rgba(3, 64, 121, 0.938);
+  margin-left: 0.7em;
+  font-size: 0.9rem;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: rgba(202, 179, 78, 0.99);
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-items li:first-child {
+  display: block;
+}
+.nav-items li {
+  display: none;
+}
+.nav-items a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1.6em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.nav-items a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-items li a:active {
+  color: rgba(6, 130, 247, 0.938);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.responsive li {
+  display: block;
+}
+
+.container h2 {
+  margin: 0.5em;
+  text-align: center;
   font-size: 1.3em;
-  font-weight: bolder;
+}
+
+.container p {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(214, 212, 212, 0.973);
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+footer {
+  background-color: rgba(231, 214, 137, 0.7);
+  text-align: center;
+  margin-top: 0.5em;
+  padding: 0.1em;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+footer p:first-child {
+  margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+  margin-top: 0;
 }

@@ -1,28 +1,28 @@
-const input = document.querySelector("input");
-const button = document.querySelector("button");
-const list = document.querySelector("ul");
+// Menu Toggle
 
-button.addEventListener("click", function () {
-  let myChapter = input.value;
+const menu = document.querySelector(".hamburger");
+const navigation = document.querySelector(".nav-items");
 
-  const listChapter = document.createElement("li");
-  const listText = document.createElement("span");
-  const deleteBtn = document.createElement("button");
+menu.addEventListener(
+  "click",
+  () => {
+    navigation.classList.toggle("responsive");
+  },
+  false
+);
 
-  if (input.value.length != 0) {
-    listChapter.appendChild(listText);
-    listText.textContent = myChapter;
+window.onresize = () => {
+  if (window.innerWidth > 760) navigation.classList.remove("responsive");
+};
 
-    listChapter.appendChild(deleteBtn);
-    deleteBtn.textContent = "X";
+// Date JS
 
-    list.appendChild(listChapter);
+const currentdate = document.querySelector("#date");
 
-    deleteBtn.addEventListener("click", () => {
-      list.removeChild(listChapter);
-    });
+let d = new Date();
 
-    input.value = "";
-    input.focus();
-  }
-});
+let formateddate = new Intl.DateTimeFormat("en-US", {
+  dateStyle: "full",
+}).format(d);
+
+currentdate.textContent = formateddate;

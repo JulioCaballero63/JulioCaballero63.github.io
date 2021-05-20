@@ -163,6 +163,10 @@ hr {
 
 /* Forecast Section */
 
+.forecast h3 {
+  display: none;
+}
+
 .flex {
   display: none;
 }

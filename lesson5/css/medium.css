@@ -69,6 +69,7 @@
   /* Forecast */
 
   .forecast h3 {
+    display: block;
     text-align: center;
   }
 

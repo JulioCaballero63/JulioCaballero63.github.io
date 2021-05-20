@@ -14,7 +14,6 @@
   .nav-items {
     display: flex;
     margin-bottom: 0;
-    padding: 0;
   }
   .nav-items a {
     font-size: 1.7em;

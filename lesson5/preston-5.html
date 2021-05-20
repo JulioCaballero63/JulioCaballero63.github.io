@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
@@ -34,7 +39,7 @@
       <ul class="nav-items">
         <li><a class="hamburger button" href="#">🍔 Menu</a></li>
         <li><a href="../index.html">Home</a></li>
-        <li><a href="#">Preston</a></li>
+        <li class="active"><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -43,12 +48,18 @@
     </nav>
     <main class="container">
       <h2>Preston Idaho</h2>
+
+      <!-- Hero section -->
+
       <div class="herodiv">
         <img
           class="heroimage"
           src="images/heroimage2.jpg"
           alt="mountain lake"
         />
+
+        <!-- Summary section -->
+
         <section class="summary">
           <h3>Weather Summary</h3>
           <hr />
@@ -66,9 +77,41 @@
           </div>
         </section>
       </div>
-      <div class="forecast">
-        <p>5 Day Forecast</p>
+
+      <!-- Forecast section -->
+      <div class="flex">
+        <div class="five-col">
+          <span class="col-head">Sunday</span>
+          <img class="five-img" src="images/weather.ico" alt="sun" />
+          <span class="data">85°F</span>
+        </div>
+
+        <div class="five-col">
+          <span class="col-head">Monday</span>
+          <img class="five-img" src="images/weather.ico" alt="sun" />
+          <span class="data">86°F</span>
+        </div>
+
+        <div class="five-col">
+          <span class="col-head">Tuesday</span>
+          <img class="five-img" src="images/weather.ico" alt="sun" />
+          <span class="data">90°F</span>
+        </div>
+
+        <div class="five-col">
+          <span class="col-head">Wednesday</span>
+          <img class="five-img" src="images/weather.ico" alt="sun" />
+          <span class="data">79°F</span>
+        </div>
+
+        <div class="five-col">
+          <span class="col-head">Thursday</span>
+          <img class="five-img" src="images/weather.ico" alt="sun" />
+          <span class="data">77°F</span>
+        </div>
       </div>
+      <!-- Article section -->
+
       <div class="article">
         <img class="articleimg" src="images/elk.jpg" alt="elk hunting" />
         <h3>Article</h3>
@@ -84,6 +127,24 @@
           beatae repudiandae eius, quidem quisquam at, voluptates dicta eveniet
           qui consequatur explicabo omnis deserunt ab distinctio exercitationem,
           impedit nihil.
+        </p>
+      </div>
+
+      <div class="location">
+        <h4>Eastern Idaho Outdoor Forecast</h4>
+        <p>
+          &#128205; 369 W Moose Dr <br />
+          Preston, ID 83263
+        </p>
+
+        <p>&#x1F4F1; 123.456.7890</p>
+        <p>&#x1F4E7; eidahoforecast@tws.com</p>
+        <p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-linkedin"></a>
         </p>
       </div>
     </main>

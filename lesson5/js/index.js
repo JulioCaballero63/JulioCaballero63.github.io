@@ -18,10 +18,10 @@ window.onresize = () => {
 const burger = document.querySelector(".button");
 
 burger.addEventListener("click", () => {
-  if (burger.innerText === "X") {
+  if (burger.innerText === "❌") {
     burger.textContent = "🍔 Menu";
   } else {
-    burger.textContent = "X";
+    burger.textContent = "❌";
   }
 });
 

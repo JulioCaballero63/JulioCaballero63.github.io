@@ -67,6 +67,11 @@
   }
 
   /* Forecast */
+
+  .forecast h3 {
+    text-align: center;
+  }
+
   .flex {
     display: flex;
     flex-flow: row wrap;

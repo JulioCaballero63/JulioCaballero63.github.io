@@ -108,7 +108,7 @@ nav {
 .summary h3,
 hr {
   margin: 0;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .summarygrid {
@@ -120,7 +120,7 @@ hr {
 .summaryp {
   margin: 0;
   padding: 0.1em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .summarygrid p:nth-child(1) {

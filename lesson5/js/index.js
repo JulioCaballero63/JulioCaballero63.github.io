@@ -39,6 +39,6 @@ currentdate.textContent = formateddate;
 
 // Aside
 
-if (d.getDay() == 4) {
+if (d.getDay() == 5) {
   document.querySelector("#banner").style.display = "block";
 }

@@ -15,6 +15,16 @@ window.onresize = () => {
   if (window.innerWidth > 760) navigation.classList.remove("responsive");
 };
 
+const burger = document.querySelector(".button");
+
+burger.addEventListener("click", () => {
+  if (burger.innerText === "X") {
+    burger.textContent = "🍔 Menu";
+  } else {
+    burger.textContent = "X";
+  }
+});
+
 // Date JS
 
 const currentdate = document.querySelector("#date");

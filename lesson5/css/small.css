@@ -82,7 +82,76 @@ nav {
   font-size: 1.3em;
 }
 
-.container p {
+.heroimage {
+  width: 100%;
+  height: auto;
+}
+
+.herodiv {
+  margin: 0.5em;
+  position: relative;
+}
+
+.summary {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  background: radial-gradient(
+    rgba(238, 238, 238, 0.973),
+    rgba(13, 150, 192, 0.993)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+  opacity: 0.8;
+}
+.summary h3,
+hr {
+  margin: 0;
+  font-size: 1em;
+}
+
+.summarygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.2em;
+}
+
+.summaryp {
+  margin: 0;
+  padding: 0.1em;
+  font-size: 0.8em;
+}
+
+.summarygrid p:nth-child(1) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(3) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(5) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(7) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(9) {
+  text-align: right;
+}
+
+.forecast {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(214, 212, 212, 0.973);
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+.article {
   margin: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: rgba(214, 212, 212, 0.973);

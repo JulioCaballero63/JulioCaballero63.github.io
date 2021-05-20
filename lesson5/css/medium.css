@@ -65,6 +65,15 @@
     margin-bottom: 0;
   }
 
+  .forecast {
+    display: block;
+    margin: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(231, 214, 137, 0.315);
+    padding: 1em;
+    font-size: 1.1em;
+  }
+
   footer {
     max-width: 80%;
     margin: 0 auto;

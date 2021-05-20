@@ -94,7 +94,7 @@ nav {
 
 .summary {
   position: absolute;
-  top: 1em;
+  top: 2em;
   left: 1em;
   background: radial-gradient(
     rgba(238, 238, 238, 0.973),
@@ -144,19 +144,24 @@ hr {
 }
 
 .forecast {
-  margin: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(214, 212, 212, 0.973);
-  padding: 1em;
-  font-size: 1.1em;
+  display: none;
 }
 
 .article {
   margin: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(214, 212, 212, 0.973);
+  background-color: rgba(231, 214, 137, 0.315);
   padding: 1em;
   font-size: 1.1em;
+}
+
+.articleimg {
+  width: 100%;
+  height: auto;
+}
+
+.article h3 {
+  text-align: left;
 }
 
 footer {

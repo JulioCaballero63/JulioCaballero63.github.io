@@ -184,6 +184,8 @@ hr {
   background-color: rgba(231, 214, 137, 0.397);
   text-align: center;
   padding: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .location h4 {
@@ -193,6 +195,10 @@ hr {
 .location p {
   margin: 0;
   padding-bottom: 0.5em;
+}
+
+.location-img {
+  display: none;
 }
 
 .fa {
@@ -238,7 +244,6 @@ hr {
 footer {
   background-color: rgba(231, 214, 137, 0.7);
   text-align: center;
-  /* margin-top: 0.5em; */
   padding: 0.1em;
 }
 

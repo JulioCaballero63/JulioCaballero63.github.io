@@ -47,6 +47,8 @@
     margin-bottom: 1em;
   }
 
+  /* Summary */
+
   .summary {
     top: 1.5em;
     left: 1.5em;
@@ -63,6 +65,7 @@
   .summarygrid p:nth-child(5) {
     margin-bottom: 0;
   }
+
   /* Forecast */
   .flex {
     display: flex;
@@ -114,9 +117,48 @@
     color: rgba(255, 255, 255, 0.938);
   }
 
+  /* Article */
+
+  .article h3,
+  p {
+    position: relative;
+    width: 100%;
+  }
+
+  .articleimg {
+    float: right;
+    width: auto;
+    height: 11em;
+  }
+
+  /* Location */
+
+  .location h4,
+  p {
+    position: relative;
+    width: 100%;
+  }
+  .location-text {
+    padding-top: 3em;
+  }
+  .location-img {
+    display: block;
+    float: left;
+    width: 15em;
+    height: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .fa {
+    padding: 8px;
+    font-size: 25px;
+    width: 25px;
+  }
+
   /* Footer */
   footer {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
   }
 }

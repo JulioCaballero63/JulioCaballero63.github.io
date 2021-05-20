@@ -39,6 +39,28 @@
     font-size: 1.2em;
   }
 
+  /* Article */
+
+  .articleimg {
+    width: auto;
+    height: 15em;
+  }
+
+  /* Location */
+
+  .location-img {
+    width: 26em;
+    height: auto;
+    padding-left: 2em;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+  }
+
+  /* Footer */
   footer {
     font-size: 1.4em;
   }

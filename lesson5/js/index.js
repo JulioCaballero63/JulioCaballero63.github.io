@@ -36,3 +36,9 @@ let formateddate = new Intl.DateTimeFormat("en-US", {
 }).format(d);
 
 currentdate.textContent = formateddate;
+
+// Aside
+
+if (d.getDay() == 4) {
+  document.querySelector("#banner").style.display = "block";
+}

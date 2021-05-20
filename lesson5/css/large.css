@@ -48,6 +48,10 @@
 
   /* Location */
 
+  .location-text {
+    padding: 7em;
+  }
+
   .location-img {
     width: 26em;
     height: auto;

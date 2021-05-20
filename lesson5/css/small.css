@@ -208,7 +208,7 @@ hr {
   display: none;
 }
 
-.fa {
+.fab {
   padding: 10px;
   font-size: 30px;
   width: 30px;
@@ -216,7 +216,6 @@ hr {
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
-  text-rendering: auto;
 }
 
 .fa:hover {

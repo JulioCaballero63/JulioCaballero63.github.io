@@ -1,0 +1,71 @@
+@media only screen and (min-width: 50em) {
+  header img {
+    width: 100px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1.3rem;
+  }
+
+  .nav-items {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .nav-items a {
+    font-size: 1.7em;
+  }
+  .nav-items li {
+    display: block;
+    flex: auto;
+    text-align: center;
+  }
+  .nav-items li:first-child {
+    display: none;
+  }
+
+  main h2 {
+    font-size: 1.9em;
+  }
+
+  .summary h3 {
+    font-size: 1.5em;
+  }
+
+  .summaryp {
+    font-size: 1.2em;
+  }
+
+  /* Article */
+
+  .articleimg {
+    width: auto;
+    height: 15em;
+  }
+
+  /* Location */
+
+  .location-text {
+    padding: 7em;
+  }
+
+  .location-img {
+    width: 26em;
+    height: auto;
+    padding-left: 2em;
+  }
+
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 1.4em;
+  }
+}

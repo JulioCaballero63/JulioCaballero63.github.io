@@ -1,0 +1,271 @@
+body {
+  background-color: rgba(231, 214, 137, 0.2);
+  padding: 0;
+  margin: 0;
+}
+
+#banner {
+  display: none;
+  padding: 1em;
+  background-color: rgba(255, 255, 0, 0.76);
+  border: 4px solid rgba(255, 71, 71, 0.959);
+}
+
+header {
+  background-color: rgba(231, 214, 137, 0.7);
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 60px;
+  height: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 1.2rem;
+  margin: 0 0 0 0.5em;
+}
+
+.motto {
+  font-family: "Noto Serif", serif;
+  color: rgba(3, 64, 121, 0.938);
+  margin-left: 0.7em;
+  font-size: 0.9rem;
+}
+
+/* Navigation Section */
+
+nav {
+  margin: 0 auto;
+  background-color: rgba(202, 179, 78, 0.99);
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-items li:first-child {
+  display: block;
+}
+.nav-items li {
+  display: none;
+}
+.nav-items a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1.6em;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav-items .active a {
+  background-color: rgba(124, 109, 51, 0.699);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-items a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-items li a:active {
+  color: rgba(6, 130, 247, 0.938);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.responsive li {
+  display: block;
+}
+
+.container h2 {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+/* Hero Section */
+
+.heroimage {
+  width: 100%;
+  height: auto;
+}
+
+.herodiv {
+  margin: 0.5em;
+  position: relative;
+}
+/* Summary Section */
+
+.summary {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  background: radial-gradient(
+    rgba(238, 238, 238, 0.973),
+    rgba(13, 150, 192, 0.993)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+  opacity: 0.8;
+}
+.summary h3,
+hr {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.summarygrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.2em;
+}
+
+.summaryp {
+  margin: 0;
+  padding: 0.1em;
+  font-size: 1em;
+}
+
+.summarygrid p:nth-child(1) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(3) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(5) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(7) {
+  text-align: right;
+}
+
+.summarygrid p:nth-child(9) {
+  text-align: right;
+}
+
+/* Forecast Section */
+
+.forecast h3 {
+  display: none;
+}
+
+.flex {
+  display: none;
+}
+
+/* Article section */
+
+.article {
+  margin: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(238, 224, 164, 0.205);
+  padding: 1em;
+  font-size: 1.1em;
+}
+
+.articleimg {
+  width: 100%;
+  height: auto;
+}
+
+.article h3 {
+  text-align: left;
+}
+
+/* Social Media */
+.location {
+  background-color: rgba(231, 214, 137, 0.397);
+  text-align: center;
+  padding: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.location h4 {
+  margin: 0;
+  padding: 0.5em;
+}
+.location p {
+  margin: 0;
+  padding-bottom: 0.5em;
+}
+
+.location-img {
+  display: none;
+}
+
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* footer */
+
+footer {
+  background-color: rgba(231, 214, 137, 0.7);
+  text-align: center;
+  padding: 0.1em;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+footer p:first-child {
+  margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+  margin-top: 0;
+}

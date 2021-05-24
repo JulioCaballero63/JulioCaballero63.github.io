@@ -1,7 +1,5 @@
 WebFont.load({
   google: {
-    families: ["Roboto Mono"],
-    families: ["Noto Serif"],
-    families: ["Noto Sans JP"],
+    families: ["Roboto Mono", "Noto Serif", "Noto Sans JP"],
   },
 });

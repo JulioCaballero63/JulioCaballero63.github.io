@@ -57,12 +57,14 @@
       <!-- Hero section -->
 
       <div class="herodiv">
-        <picture class="myphoto">
-          <img
-            class="heroimage"
-            src="images/heroimage2.jpg"
-            alt="mountain lake"
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/small.jpg" />
+          <source
+            media="(min-width: 520px) and (max-width: 799px)"
+            srcset="images/medium.jpg"
           />
+          <source media="(min-width: 800px)" srcset="images/1000.jpg" />
+          <img class="hero-img" src="images/250.jpg" alt="sunny mountain" />
         </picture>
 
         <!-- Summary section -->

@@ -99,14 +99,15 @@ nav {
 
 /* Hero Section */
 
-.heroimage {
-  width: 100%;
-}
-
 .herodiv {
   margin: 0.5em;
   position: relative;
 }
+
+.hero-img {
+  width: 100%;
+}
+
 /* Summary Section */
 
 .summary {

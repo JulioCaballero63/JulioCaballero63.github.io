@@ -50,6 +50,7 @@
   /* Summary */
 
   .summary {
+    position: absolute;
     top: 1.5em;
     left: 1.5em;
   }

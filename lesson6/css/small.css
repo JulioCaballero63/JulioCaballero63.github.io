@@ -110,9 +110,6 @@ nav {
 /* Summary Section */
 
 .summary {
-  position: absolute;
-  top: 2em;
-  left: 1em;
   background: radial-gradient(
     rgba(238, 238, 238, 0.973),
     rgba(13, 150, 192, 0.993)

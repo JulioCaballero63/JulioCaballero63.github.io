@@ -101,7 +101,6 @@ nav {
 
 .heroimage {
   width: 100%;
-  height: auto;
 }
 
 .herodiv {
@@ -181,10 +180,17 @@ hr {
   font-size: 1.1em;
 }
 
-.articleimg {
+main .article figure.article-pic {
   width: 100%;
-  height: auto;
+  margin: 0 0 0 2%;
 }
+
+main .article figure.article-pic .articleimg {
+  width: 100%;
+}
+/* .articleimg {
+  width: 100%;
+} */
 
 .article h3 {
   text-align: left;

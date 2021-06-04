@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the Image Gallery, here you will find a collection of regional images that reflect the weather and nature.
+      All of the images are submitted by the site users, but only the administrator can decide which images will be displayed."
+    />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../lesson6/css/normalized.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/3be1c2723f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="../lesson6/images/icon.png" alt="logo" />
+      </picture>
+      <section class="header">
+        <h1>Preston Idaho Forecast</h1>
+        <div class="motto">We know weather!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav-items">
+        <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <h2>Weather Gallery</h2>
+
+      <!-- Hero section -->
+
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/small.jpg" />
+          <source
+            media="(min-width: 520px) and (max-width: 799px)"
+            srcset="images/medium.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="images/large.jpg" />
+
+          <img class="hero-img" src="images/small.jpg" alt="sunny mountain" />
+        </picture>
+
+        <!-- Summary section -->
+
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <hr />
+          <div class="summarygrid">
+            <p class="summaryp">Currently:</p>
+            <p class="summaryp">Sunny</p>
+            <p class="summaryp">Current:</p>
+            <p class="summaryp"><span id="temp">20</span> °F</p>
+            <p class="summaryp">Wind Chill:</p>
+            <p class="summaryp" id="feels">N/A</p>
+            <p class="summaryp">Humidity:</p>
+            <p class="summaryp">50%</p>
+            <p class="summaryp">Wind Speed:</p>
+            <p class="summaryp"><span id="speed">5</span> mph</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Forecast section -->
+
+      <div class="forecast">
+        <h3>5 Day Forecast</h3>
+
+        <div class="flex">
+          <div class="five-col">
+            <span class="col-head">Sunday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">85°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Monday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">86°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Tuesday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">90°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Wednesday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">79°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Thursday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">77°F</span>
+          </div>
+        </div>
+      </div>
+      <!-- Article section -->
+
+      <div class="article">
+        <h3>Article</h3>
+        <figure class="article-pic">
+          <img class="articleimg" src="images/elk.jpg" alt="elk hunting" />
+        </figure>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
+          explicabo optio quod sequi doloribus animi cum inventore voluptatem
+          provident accusamus impedit porro quam eaque sapiente repellat veniam
+          quas? Commodi, quia? Voluptatibus debitis id blanditiis maxime unde
+          quia? Fuga tempore cumque obcaecati voluptates earum ad molestiae
+          magni deserunt delectus veniam saepe, excepturi aperiam quia corporis
+          consequuntur dolor ab, nesciunt, unde rerum! Molestias saepe illum
+          aut, maiores dolor repellendus commodi fugit, ut nobis natus
+          consequatur temporibus incidunt nemo. Rerum beatae eligendi, unde quis
+          quod doloremque possimus atque adipisci voluptatem nesciunt quidem
+          ipsum. Aut a animi sapiente cumque facilis ratione ipsa voluptas
+          exercitationem magnam similique! Quis officiis pariatur reiciendis
+          nesciunt assumenda libero quod? Alias, inventore culpa dolorem
+          possimus asperiores deserunt iste nihil temporibus. Iste nisi quos
+          officiis, nihil odit quaerat. Laudantium aspernatur id, amet
+          doloremque dolore dolor itaque sed inventore odit quae quam libero
+          cumque enim repudiandae nostrum tempora ducimus officiis minima
+          facilis. Fugiat pariatur vitae minus totam, nisi impedit delectus
+          magni id cupiditate similique. Explicabo harum illum temporibus. Ipsa
+          cumque aspernatur sed pariatur sapiente, ab soluta vitae obcaecati
+          voluptatum sint fuga facere! Nesciunt, distinctio ipsa. Explicabo in
+          rem ducimus quasi, expedita recusandae id debitis maxime reprehenderit
+          accusantium eius consequatur error natus possimus mollitia earum ipsa
+          vel consectetur aspernatur cupiditate, voluptatem voluptas veniam. Id
+          totam beatae earum dolore sequi sapiente. Unde velit laboriosam animi
+          officiis sint sapiente maxime tempore minus! Praesentium temporibus
+          quae quas et, assumenda esse maxime aliquam vero? Cupiditate, quo
+          porro. Possimus quod repellat ex id vel aperiam eveniet ut eligendi
+          reprehenderit quae laborum eius ad commodi, ratione maxime dolorem
+          suscipit debitis perferendis? Autem dicta non, ut repellat iure sit
+          dolore. Aliquam, atque sequi? Voluptas cupiditate facilis fugit
+          expedita eligendi nemo nihil, aspernatur unde, eveniet eos, corporis
+          aut? Veniam cupiditate ad voluptas minus quibusdam rerum voluptatibus
+          molestiae porro. Ipsum, saepe tenetur.
+        </p>
+      </div>
+
+      <!-- Location -->
+
+      <div class="location">
+        <img class="location-img" src="images/map.png" alt="map" />
+        <div class="location-text">
+          <h4>Eastern Idaho Outdoor Forecast</h4>
+          <p>
+            &#128205; 369 W Moose Dr <br />
+            Preston, ID 83263
+          </p>
+
+          <p>&#x1F4F1; 123.456.7890</p>
+          <p>&#x1F4E7; eidahoforecast@tws.com</p>
+          <p>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-linkedin"></i>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
+      <p class="date"><span id="date"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

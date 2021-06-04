@@ -273,3 +273,14 @@ footer p:first-child {
 footer p:nth-child(2) {
   margin-top: 0;
 }
+
+/* Gallery css */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.gallery-grid {
+  background-color: tomato;
+}

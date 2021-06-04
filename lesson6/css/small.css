@@ -276,11 +276,21 @@ footer p:nth-child(2) {
 
 /* Gallery css */
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+.shadow:hover {
+  box-shadow: none;
 }
 
 .gallery-grid {
-  background-color: tomato;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-col {
+  padding: 1em;
+  margin: 0;
+}
+
+.shadow {
+  max-width: 100%;
 }

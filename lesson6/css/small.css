@@ -294,3 +294,13 @@ footer p:nth-child(2) {
 .shadow {
   max-width: 100%;
 }
+
+/* figure img[data-src] {
+  filter: blur(0.4em);
+} */
+
+figure img {
+  filter: blur(0.2em);
+  transition: filter 1s;
+  margin-bottom: 3em;
+}

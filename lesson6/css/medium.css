@@ -179,7 +179,6 @@
     grid-template-columns: auto auto;
     justify-content: center;
     text-align: center;
-    gap: 2em;
   }
   .shadow:hover {
     box-shadow: none;

@@ -78,6 +78,6 @@
   /* hover effect */
 
   .shadow:hover {
-    box-shadow: 0 0 50px #333;
+    box-shadow: 0 0 50px rgba(51, 51, 51, 0.959);
   }
 }

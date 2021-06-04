@@ -287,20 +287,27 @@ footer p:nth-child(2) {
 }
 
 .grid-col {
-  padding: 1em;
-  margin: 0;
+  /* padding: 1em; */
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  margin: 1em;
 }
 
 .shadow {
   max-width: 100%;
+  margin-bottom: 0;
 }
 
-/* figure img[data-src] {
+figure img[data-src] {
   filter: blur(0.4em);
-} */
+}
 
 figure img {
-  filter: blur(0.2em);
+  filter: blur(0em);
   transition: filter 1s;
   margin-bottom: 3em;
+}
+
+figcaption {
+  font-size: medium;
+  padding-top: 0.5em;
 }

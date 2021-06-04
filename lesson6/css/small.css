@@ -186,15 +186,13 @@ main .article figure.article-pic {
 main .article figure.article-pic .articleimg {
   width: 100%;
 }
-/* .articleimg {
-  width: 100%;
-} */
 
 .article h3 {
   text-align: left;
 }
 
 /* Social Media */
+
 .location {
   background-color: rgba(231, 214, 137, 0.397);
   text-align: center;

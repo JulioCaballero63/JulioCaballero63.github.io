@@ -42,8 +42,7 @@
   /* Article */
 
   .articleimg {
-    width: auto;
-    height: 15em;
+    width: 50%;
   }
 
   /* Location */
@@ -53,7 +52,7 @@
   }
 
   .location-img {
-    width: 26em;
+    width: 50%;
     height: auto;
     padding-left: 2em;
   }

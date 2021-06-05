@@ -132,9 +132,8 @@
   }
 
   .articleimg {
+    width: 50%;
     float: right;
-    width: auto;
-    height: 11em;
   }
 
   /* Location */
@@ -150,7 +149,7 @@
   .location-img {
     display: block;
     float: left;
-    width: 15em;
+    width: 50%;
     height: auto;
     padding-top: 2em;
     padding-bottom: 2em;

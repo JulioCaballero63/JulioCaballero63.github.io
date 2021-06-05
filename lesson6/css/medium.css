@@ -178,6 +178,7 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    align-content: center;
     text-align: center;
   }
   .shadow:hover {

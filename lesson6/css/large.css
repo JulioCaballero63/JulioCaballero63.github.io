@@ -77,7 +77,7 @@
 
   /* hover effect */
 
-  .shadow:hover {
-    box-shadow: 0 0 50px rgba(51, 51, 51, 0.959);
+  .grid-col:hover {
+    box-shadow: 0 0 50px rgba(20, 20, 20, 0.959);
   }
 }

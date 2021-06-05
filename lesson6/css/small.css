@@ -288,6 +288,7 @@ footer p:nth-child(2) {
   /* padding: 1em; */
   border: 1px solid rgba(0, 0, 0, 0.212);
   margin: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .shadow {
@@ -308,4 +309,12 @@ figure img {
 figcaption {
   font-size: medium;
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  align-content: center;
+}
+
+.last-visit {
+  font-size: 1em;
+  text-align: center;
 }

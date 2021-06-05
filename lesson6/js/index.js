@@ -66,6 +66,4 @@ function getNumberOfDays(start, end) {
 }
 
 document.querySelector("#days-since-last-visit").innerHTML =
-  "Days Since Last Visit:" +
-  " " +
-  getNumberOfDays(localStorage.getItem("start"), current);
+  " " + getNumberOfDays(localStorage.getItem("start"), current);

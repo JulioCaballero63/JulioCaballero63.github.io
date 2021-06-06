@@ -43,11 +43,10 @@ if (d.getDay() == 5) {
   document.querySelector("#banner").style.display = "block";
 }
 
-// Days since last visit
+//-------- Days since last visit ---------
 
-const current = [d.getDay(), d.getMonth() + 1, d.getFullYear()].join("/");
-localStorage.setItem("start", "1/1/21");
-localStorage.setItem("end", current);
+localStorage.getItem("start");
+const end = [d.getDay(), d.getMonth() + 1, d.getFullYear()].join("/");
 
 function getNumberOfDays(start, end) {
   const date1 = new Date(start);
@@ -66,4 +65,7 @@ function getNumberOfDays(start, end) {
 }
 
 document.querySelector("#days-since-last-visit").innerHTML =
-  " " + getNumberOfDays(localStorage.getItem("start"), current);
+  " " + getNumberOfDays(localStorage.getItem("start"), end);
+
+const current = [d.getDay(), d.getMonth() + 1, d.getFullYear()].join("/");
+localStorage.setItem("start", "current");

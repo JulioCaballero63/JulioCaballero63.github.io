@@ -28,7 +28,7 @@
   <body>
     <header>
       <picture>
-        <img src="../lesson6/images/icon.png" alt="logo" />
+        <img src="images/icon.png" alt="logo" />
       </picture>
       <section class="header">
         <h1>Preston Idaho Forecast</h1>
@@ -42,34 +42,38 @@
         <li><a href="../lesson5/preston-5.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li class="active"><a href="#">Gallery</a></li>
+        <li class="active"><a href="#">Storm Center</a></li>
+        <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
     <main class="container">
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>User Information</legend>
-          <label> Full Name* <input type="text" name="fname" required /></label>
-          <label>
+          <label class="top">
+            Full Name* <input type="text" name="fname" required
+          /></label>
+          <label class="top">
             Email
             <input type="email" name="email" placeholder="someone@hotmail.com"
           /></label>
-          <label>
+          <label class="top">
             Phone Number*
             <input type="tel" name="phone" placeholder="1234445566" required
           /></label>
-          <label> Zip Code* <input type="number" name="zip" required /></label>
+          <label class="top">
+            Zip Code* <input type="number" name="zip" required
+          /></label>
         </fieldset>
 
         <fieldset>
           <legend>Storm Information</legend>
-          <label>
+          <label class="sbs">
             Date
             <input type="date" name="date"
           /></label>
 
-          <label>
+          <label class="sbs">
             Storm Type
             <input list="storm" name="storm" />
 
@@ -82,8 +86,8 @@
             </datalist>
           </label>
 
-          <label
-            >Storm Severity:<!-- Storm Severity &nbsp;&nbsp;&nbsp; -->
+          <label class="sbs"
+            >Storm Severity:
             <input
               type="range"
               id="rating"
@@ -112,7 +116,7 @@
             </datalist>
           </label>
 
-          <label
+          <label class="sbs"
             >Storm Region
             <select name="region">
               <option value="">Select Region</option>
@@ -122,22 +126,26 @@
             </select>
           </label>
 
-          <div>Danger Level</div>
-          <label><input type="radio" name="danger" value="yes" />Yes</label>
-          <label><input type="radio" name="danger" value="maybe" />Maybe</label>
-          <label><input type="radio" name="danger" value="no" />No</label>
+          <div></div>
+          Danger Level
+          <label class="sbs"
+            ><input type="radio" name="danger" value="yes" />Yes</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="maybe" />Maybe</label
+          >
+          <label class="sbs"
+            ><input type="radio" name="danger" value="no" />No</label
+          >
         </fieldset>
 
         <fieldset>
-          <div>Coments</div>
-          <textarea
-            name="comments"
-            id="comments"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <label for="comments" class="top">Comments:</label>
+
+          <textarea id="comments" name="comments" rows="5" cols="33">
+          </textarea>
         </fieldset>
-        <input type="submit" value="Submit Storm Report" />
+        <input type="submit" value="Submit Storm Report" class="submitBtn" />
       </form>
     </main>
     <footer>

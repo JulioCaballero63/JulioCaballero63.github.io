@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the storm center, here you can report a storm or unusual weather event in your travel area."
+    />
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="css/normalized.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/3be1c2723f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="../lesson6/images/icon.png" alt="logo" />
+      </picture>
+      <section class="header">
+        <h1>Preston Idaho Forecast</h1>
+        <div class="motto">We know weather!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav-items">
+        <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../lesson5/preston-5.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>User Information</legend>
+          <label> Full Name* <input type="text" name="fname" required /></label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="someone@hotmail.com"
+          /></label>
+          <label>
+            Phone Number*
+            <input type="tel" name="phone" placeholder="1234445566" required
+          /></label>
+          <label> Zip Code* <input type="number" name="zip" required /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Information</legend>
+          <label>
+            Date
+            <input type="date" name="date"
+          /></label>
+
+          <label>
+            Storm Type
+            <input list="storm" name="storm" />
+
+            <datalist id="storm">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+
+          <label
+            >Storm Severity:<!-- Storm Severity &nbsp;&nbsp;&nbsp; -->
+            <input
+              type="range"
+              id="rating"
+              value="10"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">10</span>
+
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+          </label>
+
+          <label
+            >Storm Region
+            <select name="region">
+              <option value="">Select Region</option>
+              <option value="preston">Preston</option>
+              <option value="soda-springs">Soda Springs</option>
+              <option value="fish-haven">Fish Haven</option>
+            </select>
+          </label>
+
+          <div>Danger Level</div>
+          <label><input type="radio" name="danger" value="yes" />Yes</label>
+          <label><input type="radio" name="danger" value="maybe" />Maybe</label>
+          <label><input type="radio" name="danger" value="no" />No</label>
+        </fieldset>
+
+        <fieldset>
+          <div>Coments</div>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Submit Storm Report" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
+      <p class="date"><span id="date"></span></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

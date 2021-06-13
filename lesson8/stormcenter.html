@@ -47,11 +47,18 @@
       </ul>
     </nav>
     <main class="container">
+      <h2 class="htwo">Storm Report</h2>
       <form method="get" action="thanks.html">
         <fieldset>
           <legend>User Information</legend>
           <label class="top">
-            Full Name* <input type="text" name="fname" required
+            Full Name*
+            <input
+              type="text"
+              name="fname"
+              required
+              pattern="[A-z]+\s+[A-z]{5,}"
+              placeholder="John Smith"
           /></label>
           <label class="top">
             Email
@@ -68,12 +75,12 @@
 
         <fieldset>
           <legend>Storm Information</legend>
-          <label class="sbs">
+          <label class="top">
             Date
             <input type="date" name="date"
           /></label>
 
-          <label class="sbs">
+          <label class="top">
             Storm Type
             <input list="storm" name="storm" />
 
@@ -86,37 +93,7 @@
             </datalist>
           </label>
 
-          <label class="sbs"
-            >Storm Severity:
-            <input
-              type="range"
-              id="rating"
-              value="10"
-              min="1"
-              max="10"
-              step="1"
-              list="tickmarks"
-              oninput="adjustRating(this.value)"
-              onchange="adjustRating(this.value)"
-            />
-            <span id="ratingvalue">10</span>
-
-            <datalist id="tickmarks">
-              <option value="0"></option>
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-              <option value="6"></option>
-              <option value="7"></option>
-              <option value="8"></option>
-              <option value="9"></option>
-              <option value="10"></option>
-            </datalist>
-          </label>
-
-          <label class="sbs"
+          <label class="top"
             >Storm Region
             <select name="region">
               <option value="">Select Region</option>
@@ -126,23 +103,56 @@
             </select>
           </label>
 
-          <div></div>
-          Danger Level
+          <div>Storm Severity:</div>
+          <input
+            type="range"
+            id="rating"
+            value="10"
+            min="1"
+            max="10"
+            step="1"
+            list="tickmarks"
+            oninput="adjustRating(this.value)"
+            onchange="adjustRating(this.value)"
+          />
+          <span id="ratingvalue">10</span>
+
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+          </datalist>
+
+          <div>Danger Level</div>
           <label class="sbs"
-            ><input type="radio" name="danger" value="yes" />Yes</label
+            ><input type="radio" name="danger" value="yes" /> Yes</label
           >
           <label class="sbs"
-            ><input type="radio" name="danger" value="maybe" />Maybe</label
+            ><input type="radio" name="danger" value="maybe" /> Maybe</label
           >
           <label class="sbs"
-            ><input type="radio" name="danger" value="no" />No</label
+            ><input type="radio" name="danger" value="no" /> No</label
           >
         </fieldset>
 
         <fieldset>
           <label for="comments" class="top">Comments:</label>
 
-          <textarea id="comments" name="comments" rows="5" cols="33">
+          <textarea
+            class="comment"
+            id="comments"
+            name="comments"
+            rows="5"
+            cols="33"
+          >
           </textarea>
         </fieldset>
         <input type="submit" value="Submit Storm Report" class="submitBtn" />

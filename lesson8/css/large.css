@@ -27,6 +27,11 @@
     display: none;
   }
 
+  /* Form */
+  form label.sbs {
+    padding: 0.4rem 0;
+  }
+
   /* Footer */
   footer {
     font-size: 1.4em;

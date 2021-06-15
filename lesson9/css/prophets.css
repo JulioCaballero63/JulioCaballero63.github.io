@@ -1,0 +1,54 @@
+h1,
+h2 {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  color: rgba(39, 16, 145, 0.836);
+}
+
+img {
+  width: 50%;
+  margin: 5px auto 0 auto;
+  display: block;
+  box-shadow: 0px 0px 10px 10px rgba(151, 151, 151, 0.993);
+}
+
+main {
+  box-shadow: 0px 0px 15px 10px rgba(151, 151, 151, 0.938);
+  padding: 15px;
+  margin: 0 auto;
+  background-color: rgba(219, 219, 219, 0.938);
+}
+
+section {
+  background-color: rgba(185, 185, 204, 0.938);
+  border: solid 2px rgba(77, 77, 150, 0.938);
+  padding-bottom: 12px;
+}
+
+.birth,
+.birthplace {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
+}
+
+footer {
+  text-align: center;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

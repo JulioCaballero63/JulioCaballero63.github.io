@@ -22,7 +22,7 @@ main {
 section {
   background-color: rgba(185, 185, 204, 0.938);
   border: solid 2px rgba(77, 77, 150, 0.938);
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .birth,

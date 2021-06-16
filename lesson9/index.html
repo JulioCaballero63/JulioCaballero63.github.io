@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the Weather Site Home Page, This site will include a section on general information about your three towns."
+    />
+    <title>Easter Idaho Outdoor Forecast | Preston</title>
+    <link rel="stylesheet" href="css/normalized.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/3be1c2723f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <aside id="banner">
+      "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion."
+    </aside>
+    <header>
+      <picture>
+        <img src="images/icon.png" alt="logo" />
+      </picture>
+      <section class="header">
+        <h1>Preston Idaho Forecast</h1>
+        <div class="motto">We know weather!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav-items">
+        <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <h2>Preston Idaho</h2>
+
+      <!-- Hero section -->
+
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/small.jpg" />
+          <source
+            media="(min-width: 520px) and (max-width: 799px)"
+            srcset="images/medium.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="images/large.jpg" />
+
+          <img class="hero-img" src="images/small.jpg" alt="sunny mountain" />
+        </picture>
+
+        <!-- Summary section -->
+
+        <section class="summary">
+          <h3>Weather Summary</h3>
+          <hr />
+          <div class="summarygrid">
+            <p class="summaryp">Currently:</p>
+            <p class="summaryp">Sunny</p>
+            <p class="summaryp">Current:</p>
+            <p class="summaryp"><span id="temp">20</span> °F</p>
+            <p class="summaryp">Wind Chill:</p>
+            <p class="summaryp" id="feels">N/A</p>
+            <p class="summaryp">Humidity:</p>
+            <p class="summaryp">50%</p>
+            <p class="summaryp">Wind Speed:</p>
+            <p class="summaryp"><span id="speed">5</span> mph</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Forecast section -->
+
+      <div class="forecast">
+        <h3>5 Day Forecast</h3>
+
+        <div class="flex">
+          <div class="five-col">
+            <span class="col-head">Sunday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">85°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Monday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">86°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Tuesday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">90°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Wednesday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">79°F</span>
+          </div>
+
+          <div class="five-col">
+            <span class="col-head">Thursday</span>
+            <img class="five-img" src="images/weather.ico" alt="sun" />
+            <span class="data">77°F</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location -->
+
+      <div class="location">
+        <img class="location-img" src="images/map.png" alt="map" />
+        <div class="location-text">
+          <h4>Eastern Idaho Outdoor Forecast</h4>
+          <p>
+            &#128205; 369 W Moose Dr <br />
+            Preston, ID 83263
+          </p>
+
+          <p>&#x1F4F1; 123.456.7890</p>
+          <p>&#x1F4E7; eidahoforecast@tws.com</p>
+          <p>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-linkedin"></i>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
+      <p class="date"><span id="date"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/webfontload.js"></script>
+  </body>
+</html>

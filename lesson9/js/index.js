@@ -54,7 +54,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
 
-    const town = jsonObject["town"];
+    const town = jsonObject["towns"];
 
     for (let i = 0; i < town.length; i++) {
       if (
@@ -76,9 +76,6 @@ fetch(requestURL)
         yearFounded.textContent = "Year Founded: " + town[i].yearFounded;
         population.textContent = "Population: " + town[i].currentPopulation;
         rainFall.textContent = "Annual Rainfall: " + town[i].averageRainfall;
-
-        birthdate.setAttribute("class", "birth");
-        birthdate.textContent = "Date of Birth: " + prophets[i].birthdate;
 
         image.setAttribute("src", town[i].photo);
         image.setAttribute("alt", town[i].name);

@@ -158,16 +158,6 @@ hr {
   text-align: right;
 }
 
-/* Forecast Section */
-
-.forecast h3 {
-  display: none;
-}
-
-.flex {
-  display: none;
-}
-
 /* Cards */
 
 .cards {

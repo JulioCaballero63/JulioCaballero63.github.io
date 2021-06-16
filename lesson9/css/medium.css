@@ -67,63 +67,6 @@
     margin-bottom: 0;
   }
 
-  /* Forecast */
-
-  .forecast h3 {
-    display: block;
-    text-align: center;
-  }
-
-  .flex {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 0.5em;
-    justify-content: center;
-    border-right: 1px solid rgba(51, 51, 51, 0.966);
-  }
-
-  .five-col {
-    flex: 1 1 auto;
-    background-color: rgba(246, 248, 247, 0.959);
-  }
-  .five-col {
-    border-bottom: 1px solid rgba(51, 51, 51, 0.966);
-    border-left: 1px solid rgba(51, 51, 51, 0.966);
-    text-align: center;
-  }
-  .five-col:hover {
-    opacity: 0.75;
-    background-color: rgba(0, 0, 0, 0.959);
-    color: rgba(255, 255, 255, 0.938);
-  }
-
-  .col-head {
-    display: block;
-    padding: 5px;
-    border-bottom: 1px solid rgba(51, 51, 51, 0.966);
-    text-align: center;
-  }
-
-  .five-img {
-    width: 3em;
-    border-radius: 100px;
-    padding: 0.25rem;
-  }
-
-  .data {
-    display: block;
-    padding: 0 5px 5px;
-    font-size: 0.8rem;
-    text-align: center;
-  }
-
-  .col-head {
-    font-weight: 700;
-    font-size: 1rem;
-    background-color: rgba(0, 0, 0, 0.959);
-    color: rgba(255, 255, 255, 0.938);
-  }
-
   /*Cards*/
 
   .cards {

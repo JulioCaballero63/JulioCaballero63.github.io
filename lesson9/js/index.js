@@ -52,7 +52,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
+    //console.table(jsonObject); // temporary checking for valid response and data parsing
 
     const town = jsonObject["towns"];
 
@@ -77,7 +77,7 @@ fetch(requestURL)
         population.textContent = "Population: " + town[i].currentPopulation;
         rainFall.textContent = "Annual Rainfall: " + town[i].averageRainfall;
 
-        image.setAttribute("src", town[i].photo);
+        image.setAttribute("src", "images/" + town[i].photo);
         image.setAttribute("alt", town[i].name);
         details.setAttribute("id", "details");
 

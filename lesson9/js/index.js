@@ -42,3 +42,57 @@ currentdate.textContent = formateddate;
 if (d.getDay() == 5) {
   document.querySelector("#banner").style.display = "block";
 }
+
+// JSON
+
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+
+    const town = jsonObject["town"];
+
+    for (let i = 0; i < town.length; i++) {
+      if (
+        town[i].name == "Preston" ||
+        town[i].name == "Fish Haven" ||
+        town[i].name == "Soda Springs"
+      ) {
+        let card = document.createElement("section");
+        let h2 = document.createElement("h2");
+        let h3 = document.createElement("h3");
+        let image = document.createElement("img");
+        let yearFounded = document.createElement("div");
+        let population = document.createElement("div");
+        let rainFall = document.createElement("div");
+        let details = document.createElement("div");
+
+        h2.textContent = town[i].name;
+        h3.textContent = town[i].motto;
+        yearFounded.textContent = "Year Founded: " + town[i].yearFounded;
+        population.textContent = "Population: " + town[i].currentPopulation;
+        rainFall.textContent = "Annual Rainfall: " + town[i].averageRainfall;
+
+        birthdate.setAttribute("class", "birth");
+        birthdate.textContent = "Date of Birth: " + prophets[i].birthdate;
+
+        image.setAttribute("src", town[i].photo);
+        image.setAttribute("alt", town[i].name);
+        details.setAttribute("id", "details");
+
+        card.appendChild(h2);
+        card.appendChild(h3);
+        card.appendChild(details);
+        card.appendChild(yearFounded);
+        card.appendChild(population);
+        card.appendChild(rainFall);
+        card.appendChild(image);
+
+        document.querySelector("div.cards").appendChild(card);
+      }
+    }
+  });

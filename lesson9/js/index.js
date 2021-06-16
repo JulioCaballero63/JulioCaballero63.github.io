@@ -66,9 +66,9 @@ fetch(requestURL)
         let h2 = document.createElement("h2");
         let h3 = document.createElement("h3");
         let image = document.createElement("img");
-        let yearFounded = document.createElement("div");
-        let population = document.createElement("div");
-        let rainFall = document.createElement("div");
+        let yearFounded = document.createElement("p");
+        let population = document.createElement("p");
+        let rainFall = document.createElement("p");
         let details = document.createElement("div");
 
         h2.textContent = town[i].name;

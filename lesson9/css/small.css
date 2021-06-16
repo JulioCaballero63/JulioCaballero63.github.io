@@ -168,6 +168,32 @@ hr {
   display: none;
 }
 
+/* Cards */
+
+.cards {
+  margin: 0.5rem;
+  text-align: center;
+  display: grid;
+  grid-template: 1fr;
+  gap: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+}
+
+.cards section {
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0.966);
+  border-radius: 4px;
+  background-color: rgba(231, 214, 137, 0.397);
+}
+
+.cards section img {
+  width: 96%;
+  height: auto;
+  padding: 5px;
+  filter: blur(0em);
+  transition: filter 1s;
+}
+
 /* Social Media */
 
 .location {

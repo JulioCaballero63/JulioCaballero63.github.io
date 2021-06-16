@@ -172,26 +172,49 @@ hr {
 
 .cards {
   margin: 0.5rem;
+  display: block;
+  justify-content: center;
   text-align: center;
-  display: grid;
-  grid-template: 1fr;
-  gap: 5px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
 }
 
 .cards section {
-  margin: auto;
-  border: 2px solid rgba(0, 0, 0, 0.966);
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.966);
   border-radius: 4px;
   background-color: rgba(231, 214, 137, 0.397);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
 }
 
-.cards section img {
-  width: 96%;
+.cards section h2 {
+  font-family: "Noto Serif", serif;
+  font-size: 2rem;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+.cards section h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 0.9rem;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+.cards section p {
+  font-family: "Noto Sans", san-serif;
+  font-size: 1rem;
+  color: rgba(61, 58, 92, 0.945);
+}
+
+.cards h2,
+h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+
+.cards img {
+  width: 94%;
   height: auto;
-  padding: 5px;
   filter: blur(0em);
   transition: filter 1s;
+  padding: 3%;
 }
 
 /* Social Media */

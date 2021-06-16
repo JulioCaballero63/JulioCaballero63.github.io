@@ -39,6 +39,16 @@
     font-size: 1.2em;
   }
 
+  /* Card */
+  .cards {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .cards section {
+    display: block;
+  }
+
   /* Location */
 
   .location-text {
@@ -46,7 +56,7 @@
   }
 
   .location-img {
-    width: 26em;
+    max-width: 26em;
     height: auto;
     padding-left: 2em;
   }

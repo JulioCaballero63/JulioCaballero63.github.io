@@ -81,12 +81,12 @@ fetch(requestURL)
         image.setAttribute("alt", town[i].name);
         details.setAttribute("id", "details");
 
-        card.appendChild(h2);
-        card.appendChild(h3);
         card.appendChild(details);
-        card.appendChild(yearFounded);
-        card.appendChild(population);
-        card.appendChild(rainFall);
+        details.appendChild(h2);
+        details.appendChild(h3);
+        details.appendChild(yearFounded);
+        details.appendChild(population);
+        details.appendChild(rainFall);
         card.appendChild(image);
 
         document.querySelector("div.cards").appendChild(card);

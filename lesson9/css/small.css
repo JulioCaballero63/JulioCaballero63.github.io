@@ -287,3 +287,19 @@ footer p:first-child {
 footer p:nth-child(2) {
   margin-top: 0;
 }
+
+/* Wireframes */
+
+.wireframe img {
+  width: 100%;
+}
+
+.wireframe h2,
+h3 {
+  text-align: center;
+  color: rgba(0, 0, 128, 0.938);
+  padding: 1rem 0 0.5rem 0;
+}
+.wireframe h3 {
+  font-size: 1.5rem;
+}

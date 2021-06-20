@@ -89,7 +89,7 @@
 
   .cards section #details {
     grid-column: 1;
-    margin-top: 2%rem;
+    margin-top: 2rem;
   }
 
   .cards section:nth-child(even) img {

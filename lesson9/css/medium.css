@@ -47,26 +47,6 @@
     margin-bottom: 1em;
   }
 
-  /* Summary */
-
-  .summary {
-    position: absolute;
-    top: 1.5em;
-    left: 1.5em;
-  }
-
-  .summary h3 {
-    font-size: 1.3em;
-  }
-
-  .summaryp {
-    font-size: 1em;
-  }
-
-  .summarygrid p:nth-child(5) {
-    margin-bottom: 0;
-  }
-
   /*Cards*/
 
   .cards {

@@ -1,5 +1,4 @@
 // Menu Toggle
-
 const menu = document.querySelector(".hamburger");
 const navigation = document.querySelector(".nav-items");
 
@@ -26,7 +25,6 @@ burger.addEventListener("click", () => {
 });
 
 // Date JS
-
 const currentdate = document.querySelector("#date");
 
 let d = new Date();
@@ -38,13 +36,11 @@ let formateddate = new Intl.DateTimeFormat("en-US", {
 currentdate.textContent = formateddate;
 
 // Aside
-
 if (d.getDay() == 5) {
   document.querySelector("#banner").style.display = "block";
 }
 
 // Weather Summary
-
 const apiURL =
   "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=bb328ca5ed25ab2e54b32f4fee76885b&units=imperial";
 
@@ -86,7 +82,6 @@ function windChill(temp, speed) {
 }
 
 // Web font load
-
 WebFont.load({
   google: {
     families: ["Noto Serif", "Noto Sans", "Montserrat"],

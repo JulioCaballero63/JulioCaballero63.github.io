@@ -56,6 +56,8 @@ fetch(apiURL)
     document.querySelector("#description").innerHTML =
       jsObject.weather[0].description;
     document.querySelector("#temp").innerHTML = jsObject.main.temp;
+    document.querySelector("#humidity").innerHTML = jsObject.main.humidity;
+    document.querySelector("#speed").innerHTML = jsObject.wind.speed;
 
     // const imagesrc =
     //   "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation

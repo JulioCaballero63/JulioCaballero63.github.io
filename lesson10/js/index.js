@@ -43,29 +43,32 @@ if (d.getDay() == 5) {
   document.querySelector("#banner").style.display = "block";
 }
 
-//-------- Days since last visit ---------
+// Weather Summary
 
-localStorage.getItem("start");
-const end = [d.getMonth() + 1, d.getDay() - 1, d.getFullYear()].join("/");
+const apiURL =
+  "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=bb328ca5ed25ab2e54b32f4fee76885b&units=imperial";
 
-function getNumberOfDays(start, end) {
-  const date1 = new Date(start);
-  const date2 = new Date(end);
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
 
-  // One day in milliseconds
-  const oneDay = 1000 * 60 * 60 * 24;
+    document.querySelector("#description").innerHTML =
+      jsObject.weather[0].description;
+    document.querySelector("#temp").innerHTML = jsObject.main.temp;
 
-  // Calculating the time difference between two dates
-  const diffInTime = date2.getTime() - date1.getTime();
+    // const imagesrc =
+    //   "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png"; // note the concatenation
+    // const desc = jsObject.weather[0].description; // note how we reference the weather array
+    // document.getElementById("imagesrc").textContent = imagesrc; // informational specification only
+    // document.getElementById("icon").setAttribute("src", imagesrc); // focus on the setAttribute() method
+    // document.getElementById("icon").setAttribute("alt", desc);
+  });
 
-  // Calculating the no. of days between two dates
-  const diffInDays = Math.round(diffInTime / oneDay);
+// Web font load
 
-  return diffInDays;
-}
-
-document.querySelector("#days-since-last-visit").innerHTML =
-  " " + getNumberOfDays(localStorage.getItem("start"), end);
-
-const current = [d.getMonth() + 1, d.getDay() - 1, d.getFullYear()].join("/");
-localStorage.setItem("start", current);
+WebFont.load({
+  google: {
+    families: ["Noto Serif", "Noto Sans", "Montserrat"],
+  },
+});

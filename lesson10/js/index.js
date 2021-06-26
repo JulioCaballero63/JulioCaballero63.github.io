@@ -94,9 +94,9 @@ fetch(fapiURL)
       let d = new Date(i.dt_txt);
       document.getElementById(`dayofweek${day + 1}`).textContent =
         dayOfWeek[d.getDay()];
-      document.getElementById(`forecast${day + 1}`).textContent = Math.round(
+      document.getElementById(`forecast${day + 1}`).innerHTML = `${Math.round(
         i.main.temp_max
-      );
+      )} &deg;F`;
       day++;
     });
     // const imagesrc =

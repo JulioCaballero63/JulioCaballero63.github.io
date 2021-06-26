@@ -54,6 +54,7 @@ fetch(apiURL)
     document.querySelector("#speed").innerHTML = Math.round(
       jsObject.wind.speed
     );
+
     // Windchill
     const t = parseInt(jsObject.main.temp);
     const s = parseInt(jsObject.wind.speed);
@@ -74,37 +75,32 @@ fetch(apiURL)
   });
 
 // Forecast
-
 const fapiURL =
   "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=bb328ca5ed25ab2e54b32f4fee76885b&units=imperial";
 
 fetch(fapiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
-
     let day = 0;
-    const dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-    const forecast = jsObject.list.filter((forecast) =>
-      forecast.dt_txt.includes("12:00:00")
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const forecast = jsObject.list.filter((forecastObj) =>
+      forecastObj.dt_txt.includes("12:00:00")
     );
 
     forecast.forEach((i) => {
       let d = new Date(i.dt_txt);
-      document.getElementById(`dayofweek${day + 1}`).textContent =
-        dayOfWeek[d.getDay()];
-      document.getElementById(`forecast${day + 1}`).innerHTML = `${Math.round(
+      let imagesrc = `https://openweathermap.org/img/w/${i.weather[0].icon}.png`;
+      let desc = i.weather[0].description;
+      document.querySelector(`#dayofweek${day + 1}`).textContent =
+        weekdays[d.getDay()];
+      document.querySelector(`#forecast${day + 1}`).innerHTML = `${Math.round(
         i.main.temp_max
       )} &deg;F`;
+      document.querySelector(`#image${day + 1}`).setAttribute("src", imagesrc);
+      document.querySelector(`#image${day + 1}`).setAttribute("alt", desc);
+
       day++;
     });
-    // const imagesrc =
-    //   "https://openweathermap.org/img/w/" + jsObject.weather[0].icon + ".png";
-    // document.getElementById("imagesrc").textContent = imagesrc; // informational specification only
-    // document.getElementById("icon").setAttribute("src", imagesrc); // focus on the setAttribute() method
-    // document.getElementById("icon").setAttribute("alt", desc);
-    // });
   });
 
 // Web font load

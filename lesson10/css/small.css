@@ -138,6 +138,10 @@ hr {
   font-size: 1em;
 }
 
+#description {
+  text-transform: capitalize;
+}
+
 .summarygrid p:nth-child(1) {
   text-align: right;
 }

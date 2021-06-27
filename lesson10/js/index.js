@@ -84,7 +84,7 @@ fetch(fapiURL)
     let day = 0;
     const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const forecast = jsObject.list.filter((forecastObj) =>
-      forecastObj.dt_txt.includes("12:00:00")
+      forecastObj.dt_txt.includes("18:00:00")
     );
 
     forecast.forEach((i) => {

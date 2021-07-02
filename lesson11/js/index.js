@@ -155,11 +155,11 @@ fetch(fapiURL)
   });
 
 // Web font load
-WebFont.load({
-  google: {
-    families: ["Noto Serif", "Noto Sans", "Montserrat"],
-  },
-});
+// WebFont.load({
+//   google: {
+//     families: ["Noto Serif", "Noto Sans", "Montserrat"],
+//   },
+// });
 
 // Range
 function adjustRating(rating) {

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the Image Gallery, here you will find a collection of regional images that reflect the weather and nature.
+      All of the images are submitted by the site users, but only the administrator can decide which images will be displayed."
+    />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../lesson6/css/normalized.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/3be1c2723f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img src="../lesson6/images/icon.png" alt="logo" />
+      </picture>
+      <section class="header">
+        <h1>Preston Idaho Forecast</h1>
+        <div class="motto">We know weather!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="nav-items">
+        <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+        <li><a href="../lesson11">Home</a></li>
+        <li><a href="../lesson10/preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="container">
+      <h2>Weather Gallery</h2>
+
+      <!-- Gallery -->
+
+      <div class="gallery-grid">
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/clouds.jpg"
+            alt="clouds"
+          />
+          <figcaption>Storm Clouds</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/boat.jpg"
+            alt=""
+          />
+          <figcaption>Rough Water</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/drought.jpg"
+            alt=""
+          />
+          <figcaption>Severe Drought</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/fire.jpg"
+            alt=""
+          />
+          <figcaption>Wild Fire</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/mountain.jpg"
+            alt=""
+          />
+          <figcaption>Snowed Mountain</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/rain.jpg"
+            alt=""
+          />
+          <figcaption>Rain in the valley</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/snow.jpg"
+            alt=""
+          />
+          <figcaption>Frost in the forest</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/sunny.jpg"
+            alt=""
+          />
+          <figcaption>Sunny Mountain</figcaption>
+        </figure>
+        <figure class="grid-col">
+          <img
+            class="shadow"
+            src="../lesson6/images/placeholder.jpg"
+            data-src="../lesson6/images/thunder.jpg"
+            alt=""
+          />
+          <figcaption>Thunder Storm</figcaption>
+        </figure>
+      </div>
+      <h3 class="last-visit">
+        Days since last visit: <span id="days-since-last-visit"></span>
+      </h3>
+    </main>
+    <footer>
+      <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
+      <p class="date"><span id="date"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../lesson6/js/index.js"></script>
+    <script src="../lesson6/js/webfontload.js"></script>
+    <script src="../lesson6/js/lazyload.js"></script>
+  </body>
+</html>

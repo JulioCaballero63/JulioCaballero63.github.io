@@ -11,16 +11,17 @@
     />
     <title>Easter Idaho Outdoor Forecast | Preston</title>
     <link rel="stylesheet" href="css/normalized.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Noto+Sans&family=Noto+Serif&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="shortcut icon" href="../images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/3be1c2723f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js" defer></script>
 
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -43,7 +44,7 @@
     <nav>
       <ul class="nav-items">
         <li><a class="hamburger button" href="#">🍔 Menu</a></li>
-        <li><a href="../lesson9">Home</a></li>
+        <li><a href="../lesson11">Home</a></li>
         <li class="active"><a href="#">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
@@ -57,11 +58,20 @@
       <!-- Hero section -->
 
       <div class="herodiv">
-        <img
-          class="heroimage"
-          src="images/heroimage2.jpg"
-          alt="mountain lake"
-        />
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/prestonS.jpg" />
+          <source
+            media="(min-width: 520px) and (max-width: 799px)"
+            srcset="images/prestonM.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="images/prestonL.jpg" />
+
+          <img
+            class="hero-img"
+            src="images/prestonS.jpg"
+            alt="sunny mountain"
+          />
+        </picture>
 
         <!-- Summary section -->
 
@@ -70,15 +80,15 @@
           <hr />
           <div class="summarygrid">
             <p class="summaryp">Currently:</p>
-            <p class="summaryp">Sunny</p>
-            <p class="summaryp">High:</p>
-            <p class="summaryp">90 °F</p>
+            <p class="summaryp"><span id="description"></span></p>
+            <p class="summaryp">Current:</p>
+            <p class="summaryp"><span id="temp"></span> °F</p>
             <p class="summaryp">Wind Chill:</p>
-            <p class="summaryp">°F</p>
+            <p class="summaryp" id="feels">N/A</p>
             <p class="summaryp">Humidity:</p>
-            <p class="summaryp">50%</p>
+            <p class="summaryp"><span id="humidity"></span>%</p>
             <p class="summaryp">Wind Speed:</p>
-            <p class="summaryp">5 mph</p>
+            <p class="summaryp"><span id="speed"></span> mph</p>
           </div>
         </section>
       </div>
@@ -90,41 +100,44 @@
 
         <div class="flex">
           <div class="five-col">
-            <span class="col-head">Sunday</span>
-            <img class="five-img" src="images/weather.ico" alt="sun" />
-            <span class="data">85°F</span>
+            <span class="col-head" id="dayofweek1"></span>
+            <img class="five-img" id="image1" src="#" alt="#" />
+            <p class="data"><span id="forecast1"></span></p>
           </div>
 
           <div class="five-col">
-            <span class="col-head">Monday</span>
-            <img class="five-img" src="images/weather.ico" alt="sun" />
-            <span class="data">86°F</span>
+            <span class="col-head" id="dayofweek2"></span>
+            <img class="five-img" id="image2" src="#" alt="#" />
+            <p class="data"><span id="forecast2"></span></p>
           </div>
 
           <div class="five-col">
-            <span class="col-head">Tuesday</span>
-            <img class="five-img" src="images/weather.ico" alt="sun" />
-            <span class="data">90°F</span>
+            <span class="col-head" id="dayofweek3"></span>
+            <img class="five-img" id="image3" src="#" alt="#" />
+            <p class="data"><span id="forecast3"></span></p>
           </div>
 
           <div class="five-col">
-            <span class="col-head">Wednesday</span>
-            <img class="five-img" src="images/weather.ico" alt="sun" />
-            <span class="data">79°F</span>
+            <span class="col-head" id="dayofweek4"></span>
+            <img class="five-img" id="image4" src="#" alt="#" />
+            <p class="data"><span id="forecast4"></span></p>
           </div>
 
           <div class="five-col">
-            <span class="col-head">Thursday</span>
-            <img class="five-img" src="images/weather.ico" alt="sun" />
-            <span class="data">77°F</span>
+            <span class="col-head" id="dayofweek5"></span>
+            <img class="five-img" id="image5" src="#" alt="#" />
+            <p class="data"><span id="forecast5"></span></p>
           </div>
         </div>
       </div>
       <!-- Article section -->
 
       <div class="article">
-        <img class="articleimg" src="images/elk.jpg" alt="elk hunting" />
         <h3>Article</h3>
+        <figure class="article-pic">
+          <img class="articleimg" src="images/elk.jpg" alt="elk hunting" />
+        </figure>
+
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis,
           explicabo optio quod sequi doloribus animi cum inventore voluptatem
@@ -161,6 +174,9 @@
           aut? Veniam cupiditate ad voluptas minus quibusdam rerum voluptatibus
           molestiae porro. Ipsum, saepe tenetur.
         </p>
+        <p>
+          The data used in this site is retrived from <b>OpenWeatherMap</b>.
+        </p>
       </div>
 
       <!-- Location -->
@@ -190,6 +206,6 @@
       <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
       <p class="date"><span id="date"></span></p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   </body>
 </html>

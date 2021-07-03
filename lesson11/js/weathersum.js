@@ -1,6 +1,6 @@
 function city(name) {
   let id = "";
-  if (name === "Preston Idaho") {
+  if (name === "Preston") {
     id = "5604473";
   } else if (name === "Soda Springs") {
     id = "5607916";
@@ -84,14 +84,24 @@ function city(name) {
     .then(function (jsonObject) {
       console.table(jsonObject); // temporary checking for valid response and data parsing
 
-      const towns = jsonObject["towns"];
-      for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name === "Preston") {
-          let events = towns[i].events;
-          for (let j = 0; j < events.length; j++) {
-            let event = document.createElement("p");
-            event.innerHTML = events[j];
-            document.querySelector(".eventsgrid").appendChild(event);
+      const town = jsonObject["towns"];
+
+      let active = document.querySelector("#town-name").textContent;
+      console.log(active);
+
+      for (let i = 0; i < town.length; i++) {
+        if (
+          town[i].name == "Preston" ||
+          town[i].name == "Fish Haven" ||
+          town[i].name == "Soda Springs"
+        ) {
+          if (town[i].name == active) {
+            for (let j = 0; j < town[i].events.length; j++) {
+              let x = document.createElement("p");
+              x.textContent = town[i].events[j];
+              console.log(x);
+              document.querySelector(".eventsgrid").appendChild(x);
+            }
           }
         }
       }

@@ -7,7 +7,6 @@ function city(name) {
   } else if (name === "Fish Haven") {
     id = "5585010";
   }
-  console.log(id);
 
   // Weather Summary
   const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=bb328ca5ed25ab2e54b32f4fee76885b&units=imperial`;
@@ -82,12 +81,8 @@ function city(name) {
       return response.json();
     })
     .then(function (jsonObject) {
-      console.table(jsonObject); // temporary checking for valid response and data parsing
-
       const town = jsonObject["towns"];
-
       let active = document.querySelector("#town-name").textContent;
-      console.log(active);
 
       for (let i = 0; i < town.length; i++) {
         if (
@@ -99,7 +94,7 @@ function city(name) {
             for (let j = 0; j < town[i].events.length; j++) {
               let x = document.createElement("p");
               x.textContent = town[i].events[j];
-              console.log(x);
+
               document.querySelector(".eventsgrid").appendChild(x);
             }
           }

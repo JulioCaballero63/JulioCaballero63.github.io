@@ -169,6 +169,7 @@ h3 {
   padding: 1rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
   opacity: 0.8;
+  margin-bottom: 0.5rem;
 }
 .summary h3,
 hr,
@@ -177,15 +178,22 @@ hr,
   font-size: 1.2em;
 }
 
-.summarygrid,
-.eventsgrid {
+.summarygrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0.2em;
 }
 
-.summaryp,
-.eventsp {
+.eventsgrid {
+  display: flex;
+  flex-direction: column;
+}
+
+.eventsgrid p {
+  margin-bottom: 0;
+}
+
+.summaryp {
   margin: 0;
   padding: 0.1em;
   font-size: 1em;

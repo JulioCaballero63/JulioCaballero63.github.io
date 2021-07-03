@@ -27,6 +27,14 @@
     display: none;
   }
 
+  /* events */
+  .events {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: fit-content;
+  }
+
   main h2 {
     font-size: 1.9em;
   }

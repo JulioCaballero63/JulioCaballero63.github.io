@@ -87,13 +87,23 @@
     position: absolute;
     top: 1.5em;
     left: 1.5em;
+    width: fit-content;
   }
 
-  .summary h3 {
+  .events {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    width: fit-content;
+  }
+
+  .summary h3,
+  .events h3 {
     font-size: 1.3em;
   }
 
-  .summaryp {
+  .summaryp,
+  .eventsp {
     font-size: 1em;
   }
 

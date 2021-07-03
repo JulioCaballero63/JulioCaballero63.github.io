@@ -159,7 +159,8 @@ h3 {
 
 /* Summary Section */
 
-.summary {
+.summary,
+.events {
   background: radial-gradient(
     rgba(238, 238, 238, 0.973),
     rgba(13, 150, 192, 0.993)
@@ -170,18 +171,21 @@ h3 {
   opacity: 0.8;
 }
 .summary h3,
-hr {
+hr,
+.events h3 {
   margin: 0;
   font-size: 1.2em;
 }
 
-.summarygrid {
+.summarygrid,
+.eventsgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0.2em;
 }
 
-.summaryp {
+.summaryp,
+.eventsp {
   margin: 0;
   padding: 0.1em;
   font-size: 1em;

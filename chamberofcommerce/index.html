@@ -59,28 +59,71 @@
             <h3>3 Day Forecast</h3>
             <div class="forecastdays">
               <div class="days">
-                <span class="col-head" id="dayofweek1"></span>
-                <img class="three-img" id="image1" src="#" alt="#" />
+                <img class="fore-img" id="image1" src="#" alt="#" />
                 <p class="data"><span id="forecast1"></span></p>
+                <span id="dayofweek1"></span>
               </div>
 
               <div class="days">
-                <span class="col-head" id="dayofweek2"></span>
-                <img class="five-img" id="image2" src="#" alt="#" />
+                <img class="fore-img" id="image2" src="#" alt="#" />
                 <p class="data"><span id="forecast2"></span></p>
+                <span id="dayofweek2"></span>
               </div>
 
               <div class="days">
-                <span class="col-head" id="dayofweek2"></span>
-                <img class="five-img" id="image2" src="#" alt="#" />
+                <img class="fore-img" id="image2" src="#" alt="#" />
                 <p class="data"><span id="forecast2"></span></p>
+                <span id="dayofweek2"></span>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- Forecast section -->
       </div>
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 519px)" srcset="images/middletonsmall.jpg" />
+          <source
+            media="(min-width: 520px) and (max-width: 799px)"
+            srcset="images/middletonmedium.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="images/middletonlarge.jpg" />
+
+          <img
+            class="hero-img"
+            src="images/middletonsmall.jpg"
+            alt="sunny mountain"
+          />
+        </picture>
+<!-- cards -->
+        <div class="cards">
+          <div class="section">
+            <figure>
+              <image class="ads" src="images/americanfood.jpg" alt="americanfood">
+                <figcaption>
+                  <h2>Burger Den</h2>
+                  <p>The best burgers in town!</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="section">
+            <figure>
+              <image class="ads" src="images/mexicanrestaurant.jpg" alt="mexicanfood">
+                <figcaption>
+                  <h2>Tacos el Rancho</h2>
+                  <p>Come try the best authentic mexican food!</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="section">
+            <figure>
+              <image class="ads" src="images/grocerystore.jpg" alt="groceries">
+                <figcaption>
+                  <h2>Ridley's Family Market</h2>
+                  <p>We have the best prices in town!</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
     </main>
   </body>
   <footer>Footer</footer>

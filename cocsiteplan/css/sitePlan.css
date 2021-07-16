@@ -1,0 +1,76 @@
+/* SCSS RGB color palette.
+$beige: rgba(233, 245, 219, 1);
+$tea-green: rgba(207, 225, 185, 1);
+$laurel-green: rgba(181, 201, 154, 1);
+ */
+
+/* Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+header,
+header H1 {
+    background-color: rgba(207, 225, 185, 1);
+    margin: 0;
+    padding: .5em;
+}
+
+main {
+    background-color: rgba(233, 245, 219, 1);
+}
+
+main p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+main h2 {
+    padding-top: 1em;
+    padding-bottom: .2em;
+
+}
+
+.sitemap img {
+    max-width: 100%;
+}
+
+.colorscheme img {
+    padding: 70px;
+    background-color: rgba(255, 255, 255, 0.999);
+    max-width: 70%;
+}
+
+.typography p:nth-child(2) {
+    font-family: 'Roboto Slab', serif;
+    font-size: larger;
+}
+
+.wireframes img {
+    max-width: 70%;
+}
+
+.wireframes p:nth-child(1) {
+    padding-top: .5em;
+}
+
+.wireframes p {
+    padding-top: 2em;
+    padding-bottom: .5em;
+}

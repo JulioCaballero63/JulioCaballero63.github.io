@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This his the home page for the Middleton Idaho Chamber of Commerce. It provides images of the city, 
+      advertisement for local companies, a form to join the chamber, purpose and goals of the chamber, contact information,
+      social media links, upcoming events, and local weather."
+    />
+    <title>Middleton Chamber of Commerce</title>
+    <link rel="stylesheet" href="css/normalized.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <aside id="banner">"Weather Alerts."</aside>
+    <header>
+      <div class="logoh1">
+        <picture>
+          <img src="images/city-hall.png" alt="logo" />
+        </picture>
+        <section class="header">
+          <h1>Middleton Chamber of Commerce</h1>
+        </section>
+      </div>
+      <nav>
+        <ul class="nav-items">
+          <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="middleton.html">Middleton</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="weather">
+        <section class="summary">
+          <h3>Middleton Weather</h3>
+          <div class="townweather">
+            <p><span id="temp"></span> 96°F</p>
+            <p><span id="currently">Cloudy</span></p>
+            <p><span id="humidity"></span>20% Humidity</p>
+          </div>
+          <hr />
+          <div class="forecast">
+            <h3>3 Day Forecast</h3>
+            <div class="forecastdays">
+              <div class="days">
+                <span class="col-head" id="dayofweek1"></span>
+                <img class="three-img" id="image1" src="#" alt="#" />
+                <p class="data"><span id="forecast1"></span></p>
+              </div>
+
+              <div class="days">
+                <span class="col-head" id="dayofweek2"></span>
+                <img class="five-img" id="image2" src="#" alt="#" />
+                <p class="data"><span id="forecast2"></span></p>
+              </div>
+
+              <div class="days">
+                <span class="col-head" id="dayofweek2"></span>
+                <img class="five-img" id="image2" src="#" alt="#" />
+                <p class="data"><span id="forecast2"></span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Forecast section -->
+      </div>
+    </main>
+  </body>
+  <footer>Footer</footer>
+</html>

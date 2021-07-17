@@ -106,7 +106,7 @@ nav {
 .summary {
   background: radial-gradient(
     rgba(238, 238, 238, 0.973),
-    rgba(13, 150, 192, 0.993)
+    rgba(28, 184, 36, 0.973) /* rgba(13, 150, 192, 0.993) */
   );
   border: 1px solid rgba(0, 0, 0, 0.966);
   padding: 1rem;
@@ -201,7 +201,13 @@ main {
   font-family: "Open Sans", sans-serif;
   color: rgba(61, 58, 92, 0.945);
   margin: 0;
+  padding: 0.2em;
 }
+
+.cards .section p:last-child {
+  padding-bottom: 1em;
+}
+
 .cards .section figure {
   margin: 0;
 }
@@ -211,6 +217,31 @@ main {
   filter: blur(0em);
   transition: filter 1s;
   padding: 3%;
+}
+
+.goals p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.content-wrapper {
+  width: 50%;
+}
+
+.content-wrapper img {
+  width: 100%;
+}
+
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  top: -19em;
+}
+
+.text-wrapper h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.973);
+  font-size: 3.5em;
+  font-family: "Roboto Slab", serif;
 }
 
 footer {

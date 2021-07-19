@@ -15,16 +15,28 @@
     <link rel="stylesheet" href="css/small.css" />
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap"
       rel="stylesheet"
     />
+    <!-- social media icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- fabicon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
+    <script src="js/index.js" defer></script>
+    <script src="js/weather.js" defer></script>
   </head>
   <body>
-    <aside id="banner">"Weather Alerts."</aside>
+    <div class="banner">
+      <aside id="banner"></aside>
+      <p><button class="close">❌</button></p>
+    </div>
     <header>
       <div class="logoh1">
         <picture>
@@ -34,59 +46,33 @@
           <h1>Middleton Chamber of Commerce</h1>
         </section>
       </div>
-      <nav>
-        <ul class="nav-items">
-          <li><a class="hamburger" href="#">&#9776; Menu</a></li>
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="middleton.html">Middleton</a></li>
-          <li><a href="join.html">Join</a></li>
-          <li><a href="directory.html">Directory</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul class="nav-items">
+        <li><a class="hamburger button" href="#">🍔 Menu</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="middleton.html">Middleton</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <div class="weather">
-        <section class="summary">
-          <h3>Middleton Weather</h3>
-          <div class="townweather">
-            <p><span id="temp"></span> 96°F</p>
-            <p><span id="currently">Cloudy</span></p>
-            <p><span id="humidity"></span>20% Humidity</p>
-          </div>
-          <hr />
-          <div class="forecast">
-            <h3>3 Day Forecast</h3>
-            <div class="forecastdays">
-              <div class="days">
-                <img class="fore-img" id="image1" src="#" alt="#" />
-                <p class="data"><span id="forecast1"></span></p>
-                <span id="dayofweek1"></span>
-              </div>
-
-              <div class="days">
-                <img class="fore-img" id="image2" src="#" alt="#" />
-                <p class="data"><span id="forecast2"></span></p>
-                <span id="dayofweek2"></span>
-              </div>
-
-              <div class="days">
-                <img class="fore-img" id="image2" src="#" alt="#" />
-                <p class="data"><span id="forecast2"></span></p>
-                <span id="dayofweek2"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+      <!-- hero image  -->
       <div class="herodiv">
         <picture>
-          <source media="(max-width: 519px)" srcset="images/middletonsmall.jpg" />
+          <source
+            media="(max-width: 519px)"
+            srcset="images/middletonsmall.jpg"
+          />
           <source
             media="(min-width: 520px) and (max-width: 799px)"
             srcset="images/middletonmedium.jpg"
           />
-          <source media="(min-width: 800px)" srcset="images/middletonlarge.jpg" />
+          <source
+            media="(min-width: 800px)"
+            srcset="images/middletonlarge.jpg"
+          />
 
           <img
             class="hero-img"
@@ -94,59 +80,129 @@
             alt="sunny mountain"
           />
         </picture>
-<!-- cards -->
-        <div class="cards">
-          <div class="section">
-            <figure>
-              <image class="ads" src="images/americanfood.jpg" alt="americanfood">
-                <figcaption>
-                  <h2>Burger Den</h2>
-                  <p>The best burgers in town!</p>
-                  <p>819 Min St., Middleton, ID 83644</p>
-                  <p>(208) 454-0425</p>
-              </figcaption>
-            </figure>
+      </div>
+
+      <div class="weather">
+        <section class="summary">
+          <h2>Middleton Weather</h2>
+          <div class="townweather">
+            <p><span id="temp"></span>°F</p>
+            <p><span id="currently"></span></p>
+            <p><span id="humidity"></span>% Humidity</p>
           </div>
-          <div class="section">
-            <figure>
-              <image class="ads" src="images/mexicanrestaurant.jpg" alt="mexicanfood">
-                <figcaption>
-                  <h2>Tacos el Rancho</h2>
-                  <p>Come try authentic mexican food!</p>
-                  <p>702 Main St., Middleton, ID 83644</p>
-                  <p>(208) 345-6789</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="section">
-            <figure>
-              <image class="ads" src="images/grocerystore.jpg" alt="groceries">
-                <figcaption>
-                  <h2>Ridley's Family Market</h2>
-                  <p>We have the best prices in town!</p>
-                  <p>205 Main St., Middleton, ID 83644</p>
-                  <p>(208) 321-9876</p>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-        <!-- purpose and goals -->
-        <div class="goals">
-          <p>The Middleton Chamber of Commerce is a membership organization supported by member investment. 
-            The chamber is committed to continue to improve and add value to each chamber membership. 
-            The chamber's goal is to help businesses prosper and grow.
-          </p>
-        </div>
-        <!-- form and events-->
-        <div class="joinevents">
-          <div class="content-wrapper">
-            <img src="images/prestonsmall.jpg" alt="sunny pasture">
-            <div class="text-wrapper">
-              <h1>Join Middleton Chamber of Commerce</h1>
+          <hr />
+          <!-- forecast -->
+          <div class="forecast">
+            <h2>3 Day Forecast</h2>
+            <div class="forecastdays">
+              <div class="days">
+                <img class="fore-img" id="image1" src="#" alt="#" />
+                <p class="data"><span id="forecast1"></span>°F</p>
+                <span id="dayofweek1"></span>
+              </div>
+
+              <div class="days">
+                <img class="fore-img" id="image2" src="#" alt="#" />
+                <p class="data"><span id="forecast2"></span>°F</p>
+                <span id="dayofweek2"></span>
+              </div>
+
+              <div class="days">
+                <img class="fore-img" id="image3" src="#" alt="#" />
+                <p class="data"><span id="forecast3"></span>°F</p>
+                <span id="dayofweek3"></span>
+              </div>
             </div>
           </div>
+        </section>
+      </div>
+      <!-- cards -->
+      <div class="cards">
+        <div class="section">
+          <figure>
+            <img class="ads" src="images/americanfood.jpg" alt="americanfood" />
+            <figcaption>
+              <h2>Burger Den</h2>
+              <p>The best burgers in town!</p>
+              <p>819 Min St., Middleton, ID 83644</p>
+              <p>(208) 454-0425</p>
+            </figcaption>
+          </figure>
         </div>
+        <div class="section">
+          <figure>
+            <img
+              class="ads"
+              src="images/mexicanrestaurant.jpg"
+              alt="mexicanfood"
+            />
+            <figcaption>
+              <h2>Tacos el Rancho</h2>
+              <p>Come try authentic mexican food!</p>
+              <p>702 Main St., Middleton, ID 83644</p>
+              <p>(208) 345-6789</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="section">
+          <figure>
+            <img class="ads" src="images/grocerystore.jpg" alt="groceries" />
+            <figcaption>
+              <h2>Ridley's Family Market</h2>
+              <p>We have the best prices in town!</p>
+              <p>205 Main St., Middleton, ID 83644</p>
+              <p>(208) 321-9876</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <!-- purpose and goals -->
+      <div class="goals">
+        <p>
+          The Middleton Chamber of Commerce is a membership organization
+          supported by member investment. The chamber is committed to continue
+          to improve and add value to each chamber membership. The chamber's
+          goal is to help businesses prosper and grow.
+        </p>
+      </div>
+      <!-- form and events-->
+      <div class="joinevents">
+        <div class="join">
+          <a href="join.html">
+            <div class="text-wrapper">
+              <h2>Join Middleton Chamber of Commerce</h2>
+            </div>
+          </a>
+        </div>
+        <div class="events">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>Sat, Jul 24, 2021: Middleton night rodeo.</li>
+            <li>Sun, Jul 25, 2021: Middleton night rodeo.</li>
+            <li>Mon, jul 26, 2021: Buckaroo Breakfast.</li>
+          </ul>
+        </div>
+      </div>
     </main>
+    <!-- contact  -->
+    <div class="contact">
+      <div class="touch">
+        <h2>Get In Touch</h2>
+        <p>(208) 675-9373</p>
+        <p>1001 Main St., Middleton, ID 83644</p>
+        <p>info@middletonchamber.org</p>
+      </div>
+      <div class="connected">
+        <h2>Stay Connected</h2>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </div>
+    <footer>
+      <p>&copy;| Eastern Idaho Outdoor Forecast | Julio Caballero</p>
+      <p class="date"><span id="date"></span></p>
+    </footer>
   </body>
-  <footer>Footer</footer>
 </html>

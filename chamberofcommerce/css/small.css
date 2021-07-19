@@ -1,0 +1,406 @@
+/* SCSS RGB color palette.
+$beige: rgba(233, 245, 219, 1);
+$tea-green: rgba(207, 225, 185, 1);
+$laurel-green: rgba(181, 201, 154, 1);
+ */
+
+/* Fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+/* weather alerts */
+.banner {
+  display: none;
+  flex-direction: row;
+  padding: 1em;
+  background-color: rgba(255, 255, 0, 0.76);
+  border: 4px solid rgba(255, 71, 71, 0.959);
+}
+
+.banner aside {
+  font-family: "Open Sans", sans-serif;
+}
+
+.banner p {
+  position: absolute;
+  top: 0.2em;
+  right: 1em;
+}
+
+.banner button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* header */
+header {
+  background-color: rgba(181, 201, 154, 1);
+  padding: auto;
+}
+
+header picture {
+  padding: 0.5em;
+}
+header img {
+  width: 60px;
+  height: auto;
+}
+
+.logoh1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex: 1 0 40%;
+}
+
+.header h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5rem;
+  padding-left: 0.3em;
+  margin: 0;
+}
+
+nav {
+  margin: 0 auto;
+  background-color: rgba(181, 201, 154, 1);
+}
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+}
+.nav-items li:first-child {
+  display: block;
+}
+.nav-items li {
+  display: none;
+}
+
+.nav-items a {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1em;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+.nav-items .active a {
+  background-color: rgb(130, 151, 102, 1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-items a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-items li a:active {
+  color: rgba(6, 130, 247, 0.938);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* to toggle menu */
+.responsive li {
+  display: block;
+}
+
+/* weather */
+.weather {
+  display: block;
+
+  text-align: center;
+}
+.summary {
+  background: radial-gradient(
+    rgba(238, 238, 238, 0.973),
+    rgba(28, 184, 36, 0.973)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+}
+
+.townweather {
+  display: flex;
+  flex-direction: column;
+}
+
+.townweather p {
+  margin: 0;
+  padding: 0.1em;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+.townweather p:first-child {
+  font-size: 2.5em;
+}
+
+.forecastdays {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 1em;
+}
+.days {
+  border: 2px solid rgba(9, 3, 95, 0.945);
+  border-radius: 6px;
+}
+#currently {
+  text-transform: capitalize;
+}
+
+.fore-img {
+  width: 100%;
+  border: 0;
+}
+
+.data {
+  display: block;
+  margin: 0;
+  padding: 0 5px 5px;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+body {
+  background-color: rgba(233, 245, 219, 1);
+}
+
+main {
+  background-color: rgba(233, 245, 219, 1);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 35em;
+}
+
+.weather h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex: 1 1 30%;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.cards .section {
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  border-radius: 4px;
+  background-color: rgba(207, 225, 185, 1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+}
+
+.cards .section h2 {
+  font-family: "Roboto Slab", serif;
+  color: rgba(9, 3, 95, 0.945);
+  margin: 0;
+}
+
+.cards .section p {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(61, 58, 92, 0.945);
+  margin: 0;
+  padding: 0.2em;
+}
+
+.cards .section p:last-child {
+  padding-bottom: 1em;
+}
+
+.cards .section figure {
+  margin: 0;
+}
+.cards img {
+  width: 94%;
+  height: auto;
+  filter: blur(0em);
+  transition: filter 1s;
+  padding: 3%;
+}
+/* goals*/
+.goals {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+.goals p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* events/join*/
+.joinevents {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.join {
+  background: radial-gradient(
+    rgba(243, 245, 243, 0.973),
+    rgba(28, 184, 36, 0.973)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  flex: 1 0 30%;
+}
+.text-wrapper {
+  width: 100%;
+}
+
+.join h2 {
+  margin: 0;
+  padding-top: 1em;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+.join a {
+  text-decoration: none;
+}
+
+.events {
+  background: radial-gradient(
+    rgba(118, 124, 207, 0.973),
+    rgba(46, 53, 160, 0.973)
+  );
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  flex: 1 0 50%;
+  color: rgba(84, 233, 91, 0.973);
+}
+
+.events h2 {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+.events ul li {
+  font-family: "Open Sans", sans-serif;
+  padding: 0.5em;
+}
+.text-wrapper h1 {
+  text-align: center;
+  color: rgba(9, 3, 95, 0.945);
+  font-size: 2em;
+  font-family: "Roboto Slab", serif;
+}
+
+/* contact*/
+.contact {
+  width: 100%;
+  background-color: rgba(207, 225, 185, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: rgba(9, 3, 95, 0.945);
+}
+
+.contact h2 {
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 0%;
+  padding: 0.5em;
+}
+.contact p {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding-bottom: 0.3em;
+}
+.contact p:last-child {
+  padding-bottom: 2em;
+}
+/* touch*/
+.touch {
+  flex: 1 1 50%;
+}
+
+/* connected*/
+.connected {
+  flex: 1 1 50%;
+}
+.connected a {
+  margin-bottom: 0;
+  padding-bottom: 2em;
+}
+.connected .fa {
+  padding: 0.8em;
+  font-size: 1.5em;
+  width: 1em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+footer {
+  background-color: rgba(181, 201, 154, 1);
+  text-align: center;
+  padding: 0.5em;
+}
+footer p {
+  margin: 0;
+  padding: 0.5em;
+}
+
+footer p:first-child {
+  padding-bottom: 0;
+}
+
+footer p:last-child {
+  padding-top: 0;
+}

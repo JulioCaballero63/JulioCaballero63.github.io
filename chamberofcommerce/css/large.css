@@ -1,249 +1,39 @@
-/* SCSS RGB color palette.
-$beige: rgba(233, 245, 219, 1);
-$tea-green: rgba(207, 225, 185, 1);
-$laurel-green: rgba(181, 201, 154, 1);
- */
+@media only screen and (min-width: 50em) {
+  .banner {
+    background-color: pink;
+  }
 
-/* Fonts
-font-family: 'Open Sans', sans-serif;
-font-family: 'Roboto Slab', serif; */
+  .nav-items li:first-child {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+    margin-bottom: 0;
+  }
+  .nav-items a {
+    font-size: 1.7em;
+  }
+  .nav-items li {
+    display: block;
+    flex: auto;
+    text-align: center;
+  }
+  .nav-items li:first-child {
+    display: none;
+  }
+  .weather {
+    position: absolute;
+    top: 13em;
+    right: 5em;
+  }
 
-/* weather alerts */
-#banner {
-  display: block;
-  padding: 1em;
-  background-color: rgba(255, 255, 0, 0.76);
-  border: 4px solid rgba(255, 71, 71, 0.959);
-}
-
-/* header */
-header {
-  background-color: rgba(181, 201, 154, 1);
-  padding: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-header picture {
-  padding: 0.5em;
-}
-header img {
-  width: 60px;
-  height: auto;
-}
-
-.logoh1 {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  flex: 1 0 40%;
-}
-
-.header h1 {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
-  padding-left: 0.3em;
-  margin: 0;
-}
-
-/* navigation */
-nav {
-  flex: 1 1 50%;
-}
-.nav-items {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 01.5em;
-  margin: 0;
-}
-.nav-items a {
-  display: block;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 1.2em;
-}
-
-.nav-items li:first-child {
-  display: none;
-}
-
-.nav-items .active a {
-  background-color: rgb(130, 151, 102);
-  color: rgba(255, 255, 255, 0.9);
-  border-radius: 8px;
-}
-
-.nav-items a:hover {
-  color: rgba(255, 255, 255, 0.9);
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-}
-
-.nav-items li a:active {
-  color: rgba(6, 130, 247, 0.938);
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* to toggle menu */
-.responsive li {
-  display: block;
-}
-
-/* weather */
-.weather {
-  position: absolute;
-  top: 10em;
-  right: 5em;
-  width: fit-content;
-  text-align: center;
-}
-.summary {
-  background: radial-gradient(
-    rgba(238, 238, 238, 0.973),
-    rgba(28, 184, 36, 0.973) /* rgba(13, 150, 192, 0.993) */
-  );
-  border: 1px solid rgba(0, 0, 0, 0.966);
-  padding: 1rem;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.966);
-  opacity: 0.8;
-  margin-bottom: 0.5rem;
-}
-.summary h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-.townweather {
-  display: flex;
-  flex-direction: column;
-}
-
-.townweather p {
-  margin: 0;
-  padding: 0.1em;
-  font-size: 1em;
-}
-
-.forecastdays {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-#description {
-  text-transform: capitalize;
-}
-
-.fore-img {
-  width: 3em;
-  border-radius: 100px;
-  padding: 0.25rem;
-}
-
-.data {
-  display: block;
-  padding: 0 5px 5px;
-  font-size: 0.8rem;
-  text-align: center;
-}
-
-body {
-  background-color: rgba(233, 245, 219, 1);
-}
-
-main {
-  background-color: rgba(233, 245, 219, 1);
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-.hero-img {
-  width: 100%;
-  max-height: 25em;
-}
-
-.weather h3 {
-  margin-top: 0;
-  padding-top: 0.5em;
-}
-
-/* Card */
-.cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 0.5rem;
-  flex: 1 1 30%;
-  text-align: center;
-}
-
-.cards .section {
-  margin: 1rem 0;
-  border: 1px solid rgba(0, 0, 0, 0.966);
-  border-radius: 4px;
-  background-color: rgba(207, 225, 185, 1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
-}
-
-.cards .section h2 {
-  font-family: "Roboto Slab", serif;
-  color: rgba(9, 3, 95, 0.945);
-  margin: 0;
-}
-
-.cards .section p {
-  font-family: "Open Sans", sans-serif;
-  color: rgba(61, 58, 92, 0.945);
-  margin: 0;
-  padding: 0.2em;
-}
-
-.cards .section p:last-child {
-  padding-bottom: 1em;
-}
-
-.cards .section figure {
-  margin: 0;
-}
-.cards img {
-  width: 94%;
-  height: auto;
-  filter: blur(0em);
-  transition: filter 1s;
-  padding: 3%;
-}
-
-.goals p {
-  font-family: "Open Sans", sans-serif;
-}
-
-.content-wrapper {
-  width: 50%;
-}
-
-.content-wrapper img {
-  width: 100%;
-}
-
-.text-wrapper {
-  width: 100%;
-  position: relative;
-  top: -19em;
-}
-
-.text-wrapper h1 {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.973);
-  font-size: 3.5em;
-  font-family: "Roboto Slab", serif;
-}
-
-footer {
-  background-color: rgba(207, 225, 185, 1);
+  .hero-img {
+    padding-top: 1em;
+  }
+  .joinevents {
+    flex-direction: row;
+  }
+  .contact {
+    flex-direction: row;
+  }
 }

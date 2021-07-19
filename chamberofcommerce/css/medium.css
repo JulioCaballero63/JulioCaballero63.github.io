@@ -1,7 +1,4 @@
 @media only screen and (min-width: 32.5em) {
-  .banner {
-    background-color: blue;
-  }
   .nav-items a {
     display: block;
     padding: 0.5rem;

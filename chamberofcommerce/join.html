@@ -51,100 +51,145 @@
       <h1>Join Now</h1>
     </div>
     <main>
-
-<div class="memberlevels">     
-  <h2>Membership Levels</h2>
-      <ul class="levels">
-        <li>Supporting $275</li>
-        <li>Associate $450</li>
-        <li>Business $675</li>
-        <li>Silver $1,000</li>
-        <li>Gold $2,250</li>
-        <li>Platinum $3,750</li>
-      </ul></div> 
-        <p>
-          To sign up for membership, please review the detailed benefit descriptions
-           before filling out the application below. * Descriptions of the benefits 
-           for each tier of membership can be found by clicking Detailed Membership 
-           Benefits from the Membership menu above. *Determine the level you want & 
-           fill out the application below. *Membership is activated upon receipt of 
-           payment. *Dues cover a full twelve month period and are automatically invoiced on your anniversary date.
-        </p>
-        <h2>History</h2>
-        <p>
-          Middleton was named for its location between the old fort Boise and
-          Keeney's Ferry; it being the midpoint between the two. It served as a
-          rest stop for those heading for Keeney's Ferry. It had a stage station
-          in the early days of the Oregon Trail, a post office in 1866 and a
-          water powered grist mill in 1871. The Ward Massacre occurred near the
-          site in 1854. Middleton is the oldest settlement in Canyon County,
-          with the land being parceled out in 1863 by William N. Montgomery. The
-          Boise River flooded in 1872 and cut a new channel, isolating the town
-          on an island; as a result, the town moved to a new location in the
-          years after 1880. The town incorporated as a city in 1910, although
-          the certificate was not issued until 1971. The present mayor is Steve
-          Rule. On February 1, 2007, 78% of Middleton High School burned down,
-          caused by the overheating of a fan above the weight room. The
-          42-year-old building was built when fire codes required sprinklers to
-          be installed, but there was no provision for their functionality. To
-          save money during the construction of the school in the 1960s, the
-          sprinklers were installed but were never connected to a water source.
-        </p>
-        <h2>Demographics</h2>
-        <h3>2010 census</h3>
-        <p>
-          At the 2010 census there were 5,524 people in 1,843 households,
-          including 1,392 families, in the city. The population density was
-          976.0 inhabitants per square mile (376.8/km2). There were 2,037
-          housing units at an average density of 359.9 per square mile
-          (139.0/km2). The racial makup of the city was 92.5% White, 0.3%
-          African American, 0.6% Native American, 0.5% Asian, 0.1% Pacific
-          Islander, 3.3% from other races, and 2.8% from two or more races.
-          Hispanic or Latino of any race were 10.0%.[3] Of the 1,843 households
-          49.5% had children under the age of 18 living with them, 54.7% were
-          married couples living together, 13.6% had a female householder with
-          no husband present, 7.2% had a male householder with no wife present,
-          and 24.5% were non-families. 19.9% of households were one person and
-          7.1% were one person aged 65 or older. The average household size was
-          3.00 and the average family size was 3.45. The median age was 30.5
-          years. 35.1% of residents were under the age of 18; 7.6% were between
-          the ages of 18 and 24; 29.9% were from 25 to 44; 19.1% were from 45 to
-          64; and 8.2% were 65 or older. The gender makeup of the city was 49.9%
-          male and 50.1% female.
-        </p>
-        <p>
-          Town history from
-          <a href="https://en.wikipedia.org/wiki/Preston,_Idaho"
-            ><b>Wikipedia</b></a
-          >
-        </p>
+      <div class="memberlevels">
+        <h2>Membership Levels</h2>
+        <ul class="levels">
+          <li>Supporting $275</li>
+          <li>Associate $450</li>
+          <li>Business $675</li>
+          <li>Silver $1,000</li>
+          <li>Gold $2,250</li>
+          <li>Platinum $3,750</li>
+        </ul>
       </div>
+      <p>
+        To sign up for membership, please review the detailed benefit
+        descriptions before filling out the application below. * Descriptions of
+        the benefits for each tier of membership can be found by clicking
+        Detailed Membership Benefits from the Membership menu above. *Determine
+        the level you want & fill out the application below. *Membership is
+        activated upon receipt of payment. *Dues cover a full twelve month
+        period and are automatically invoiced on your anniversary date.
+      </p>
+      <!-- <form method="get" action="#"> -->
+      <div class="form">
+        <div class="member">
+          <h2>Member Info</h2>
+        </div>
 
-      <!-- cards -->
-      <div class="cards">
-        <div class="section">
-          <figure>
-            <img class="ads" src="images/middletonvalley.jpg" alt="valley" />
-            <figcaption>
-              <h2>Valley</h2>
-            </figcaption>
-          </figure>
+        <div class="name">
+          <label class="top">
+            Company Name*
+            <input
+              class="box"
+              type="text"
+              name="cname"
+              required
+              placeholder="Tacos el Rancho"
+          /></label>
         </div>
-        <div class="section">
-          <figure>
-            <img class="ads" src="images/mhighschool.jpg" alt="highschool" />
-            <figcaption>
-              <h2>Middleton Highschool</h2>
-            </figcaption>
-          </figure>
+
+        <div class="email">
+          <label class="top">
+            Email*
+            <input
+              class="box"
+              type="email"
+              name="email"
+              required
+              placeholder="someone@hotmail.com"
+          /></label>
         </div>
-        <div class="section">
-          <figure>
-            <img class="ads" src="images/homes.jpg" alt="groceries" />
-            <figcaption>
-              <h2>Middleton Homes</h2>
-            </figcaption>
-          </figure>
+
+        <div class="phone">
+          <label class="top">
+            Phone Number*
+            <input
+              class="box"
+              type="tel"
+              name="phone"
+              placeholder="1234445566"
+              required
+          /></label>
+        </div>
+
+        <div class="website">
+          <label class="top">
+            Website*
+            <input
+              class="box"
+              type="text"
+              name="website"
+              placeholder="www.example.com"
+              required
+          /></label>
+        </div>
+
+        <div class="address">
+          <h2>Physical Address</h2>
+        </div>
+
+        <div class="addressone">
+          <label class="top">
+            Address line 1*
+            <input
+              class="box"
+              type="text"
+              name="address-one"
+              required
+              placeholder="123 Example Street"
+            />
+          </label>
+        </div>
+
+        <div class="address-two">
+          <label class="top">
+            Address line 2
+            <input
+              class="box"
+              type="text"
+              name="addresstwo"
+              placeholder="Suite 123"
+            />
+          </label>
+        </div>
+
+        <div class="city">
+          <label class="top">
+            City*
+            <input
+              class="box"
+              type="text"
+              name="city"
+              required
+              placeholder="Middleton"
+            />
+          </label>
+        </div>
+
+        <div class="state">
+          <label class="top">
+            State*
+            <input
+              class="box"
+              type="text"
+              name="state"
+              required
+              placeholder="Idaho"
+            />
+          </label>
+        </div>
+
+        <div class="zip">
+          <label class="top">
+            Zip Code*
+            <input
+              class="box"
+              type="text"
+              name="zipcode"
+              required
+              placeholder="83644"
+          /></label>
         </div>
       </div>
     </main>

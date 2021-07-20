@@ -452,20 +452,67 @@ h3 {
     rgba(46, 53, 160, 0.973)
   );
 }
+.memberlevels h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+}
 .levels {
   list-style-type: none;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 0.5em;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 1em;
+  max-width: 40%;
 }
 .levels li {
   display: block;
-  padding: 0.5rem;
+  margin: 0.5em;
+  padding: 1rem;
   text-align: center;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(243, 245, 243, 0.973);
   font-weight: 500;
   font-size: 1em;
+  background: linear-gradient(
+    to left,
+    rgba(14, 149, 190, 0.966),
+    rgba(46, 53, 160, 0.973)
+  );
+  border-radius: 8px;
+}
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.member h2,
+.address h2 {
+  background: linear-gradient(
+    to right,
+    rgba(14, 149, 190, 0.966),
+    rgba(46, 53, 160, 0.973)
+  );
+  color: rgba(243, 245, 243, 0.973);
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  margin: 2em 0 0.5em;
+  padding: 0.5em 1em;
+}
+
+.top {
+  background-color: aquamarine;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.form .box {
+  display: block;
+  width: 95%;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding: 1em 0.3em;
 }

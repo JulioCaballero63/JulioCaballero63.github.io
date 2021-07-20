@@ -29,4 +29,27 @@
   .levels {
     flex-direction: row;
   }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  .name {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .email {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .phone {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .website {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
 }

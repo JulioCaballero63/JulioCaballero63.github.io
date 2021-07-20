@@ -73,140 +73,196 @@
       </p>
       <!-- <form method="get" action="#"> -->
       <div class="form">
-        <div class="member">
-          <h2>Member Info</h2>
-        </div>
+        <form action="middleton.html">
+          <div class="member">
+            <h2>Member Info</h2>
+          </div>
+          <div class="flex">
+            <div class="name">
+              <label class="top">
+                Company Name*
+                <input
+                  class="box"
+                  type="text"
+                  name="cname"
+                  required
+                  placeholder="Tacos el Rancho"
+              /></label>
+            </div>
 
-        <div class="name">
-          <label class="top">
-            Company Name*
-            <input
-              class="box"
-              type="text"
-              name="cname"
-              required
-              placeholder="Tacos el Rancho"
-          /></label>
-        </div>
+            <div class="email">
+              <label class="top">
+                Email*
+                <input
+                  class="box"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="someone@hotmail.com"
+              /></label>
+            </div>
 
-        <div class="email">
-          <label class="top">
-            Email*
-            <input
-              class="box"
-              type="email"
-              name="email"
-              required
-              placeholder="someone@hotmail.com"
-          /></label>
-        </div>
+            <div class="phone">
+              <label class="top">
+                Phone Number*
+                <input
+                  class="box"
+                  type="tel"
+                  name="phone"
+                  placeholder="1234445566"
+                  required
+              /></label>
+            </div>
 
-        <div class="phone">
-          <label class="top">
-            Phone Number*
-            <input
-              class="box"
-              type="tel"
-              name="phone"
-              placeholder="1234445566"
-              required
-          /></label>
-        </div>
+            <div class="website">
+              <label class="top">
+                Website*
+                <input
+                  class="box"
+                  type="text"
+                  name="website"
+                  placeholder="www.example.com"
+                  required
+              /></label>
+            </div>
+          </div>
+          <!-- physical address -->
+          <div class="address">
+            <h2>Physical Address</h2>
+          </div>
 
-        <div class="website">
-          <label class="top">
-            Website*
-            <input
-              class="box"
-              type="text"
-              name="website"
-              placeholder="www.example.com"
-              required
-          /></label>
-        </div>
-        <!-- physical address -->
-        <div class="address">
-          <h2>Physical Address</h2>
-        </div>
+          <div class="addressone">
+            <label class="top">
+              Address line 1*
+              <input
+                class="box"
+                type="text"
+                name="address-one"
+                required
+                placeholder="123 Example Street"
+              />
+            </label>
+          </div>
 
-        <div class="addressone">
-          <label class="top">
-            Address line 1*
-            <input
-              class="box"
-              type="text"
-              name="address-one"
-              required
-              placeholder="123 Example Street"
-            />
-          </label>
-        </div>
+          <div class="address-two">
+            <label class="top">
+              Address line 2
+              <input
+                class="box"
+                type="text"
+                name="addresstwo"
+                placeholder="Suite 123"
+              />
+            </label>
+          </div>
 
-        <div class="address-two">
-          <label class="top">
-            Address line 2
-            <input
-              class="box"
-              type="text"
-              name="addresstwo"
-              placeholder="Suite 123"
-            />
-          </label>
-        </div>
+          <div class="city">
+            <label class="top">
+              City*
+              <input
+                class="box"
+                type="text"
+                name="city"
+                required
+                placeholder="Middleton"
+              />
+            </label>
+          </div>
 
-        <div class="city">
-          <label class="top">
-            City*
-            <input
-              class="box"
-              type="text"
-              name="city"
-              required
-              placeholder="Middleton"
-            />
-          </label>
-        </div>
+          <div class="state">
+            <label class="top">
+              State*
+              <input
+                class="box"
+                type="text"
+                name="state"
+                required
+                placeholder="Idaho"
+              />
+            </label>
+          </div>
 
-        <div class="state">
-          <label class="top">
-            State*
-            <input
-              class="box"
-              type="text"
-              name="state"
-              required
-              placeholder="Idaho"
-            />
-          </label>
-        </div>
+          <div class="zip">
+            <label class="top">
+              Zip Code*
+              <input
+                class="box"
+                type="text"
+                name="zipcode"
+                required
+                placeholder="83644"
+            /></label>
+          </div>
 
-        <div class="zip">
-          <label class="top">
-            Zip Code*
-            <input
-              class="box"
-              type="text"
-              name="zipcode"
-              required
-              placeholder="83644"
-          /></label>
-        </div>
+          <!-- mailing address -->
+          <div class="address">
+            <h2>Mailing Address</h2>
+          </div>
 
-        <!-- mailing address -->
-        <div class="address">
-          <h2>Mailing Address</h2>
-        </div>
+          <div class="mailing">
+            <label>
+              <input
+                class="checkbox"
+                type="checkbox"
+                name="mailing"
+                value="yes"
+              /><span> Same as physical address</span>
+            </label>
+          </div>
 
-        <div class="mailing">
-          <label>
-            <input
-              class="checkbox"
-              type="checkbox"
-              name="danger"
-              value="yes"
-            /><span> Same as physical address</span>
-          </label>
-        </div>
+          <!-- social network address -->
+          <div class="member">
+            <h2>Social Network Links</h2>
+          </div>
+
+          <div class="facebook">
+            <label class="top">
+              Facebook
+              <input
+                class="box"
+                type="text"
+                name="facebook"
+                placeholder="https://facebook.com"
+            /></label>
+          </div>
+          <div class="twitter">
+            <label class="top">
+              Twitter
+              <input
+                class="box"
+                type="text"
+                name="twitter"
+                placeholder="https://twitter.com"
+            /></label>
+          </div>
+
+          <div class="instagram">
+            <label class="top">
+              Instagram
+              <input
+                class="box"
+                type="text"
+                name="instagram"
+                placeholder="https://instagram.com"
+            /></label>
+          </div>
+
+          <div class="linkedin">
+            <label class="top">
+              Linkedin
+              <input
+                class="box"
+                type="text"
+                name="linkedin"
+                placeholder="https://linkedin.com"
+            /></label>
+          </div>
+          <input
+            type="submit"
+            value="Submit Member Application"
+            class="submitBtn"
+          />
+        </form>
       </div>
     </main>
     <footer>

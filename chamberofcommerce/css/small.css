@@ -68,10 +68,12 @@ nav {
   margin: 0 auto;
   background-color: rgba(181, 201, 154, 1);
 }
+
 .nav-items {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
+  margin-bottom: 0;
 }
 .nav-items li:first-child {
   display: block;
@@ -434,4 +436,36 @@ p,
 h3 {
   margin: 0;
   padding-bottom: 0.5em;
+}
+/* title */
+.title h1 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-style: italic;
+  font-size: xx-large;
+  padding: 0.5em;
+  margin: 0;
+  color: rgba(243, 245, 243, 0.973);
+  background: linear-gradient(
+    to right,
+    rgba(191, 69, 228, 0.966),
+    rgba(46, 53, 160, 0.973)
+  );
+}
+.levels {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.levels li {
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  font-size: 1em;
 }

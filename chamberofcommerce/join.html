@@ -51,43 +51,46 @@
       <h2>Join Now</h2>
     </div>
     <main>
-      <div class="memberlevels">
-        <h3>Membership Levels</h3>
-        <ul class="levels">
-          <li>Supporting $275</li>
-          <li>Associate $450</li>
-          <li>Business $675</li>
-          <li>Silver $1,000</li>
-          <li>Gold $2,250</li>
-          <li>Platinum $3,750</li>
-        </ul>
-      </div>
-      <p>
-        To sign up for membership, please review the detailed benefit
-        descriptions before filling out the application below. * Descriptions of
-        the benefits for each tier of membership can be found by clicking
-        Detailed Membership Benefits from the Membership menu above. *Determine
-        the level you want & fill out the application below. *Membership is
-        activated upon receipt of payment. *Dues cover a full twelve month
-        period and are automatically invoiced on your anniversary date.
-      </p>
-
       <div class="form">
         <form method="get" action="submit.html">
           <div class="member">
             <h3>Member Info</h3>
           </div>
           <div class="flex">
-            <div class="name">
+            <div class="firstname">
               <label class="top">
-                Company Name*
+                First Name*
                 <input
                   class="box"
                   type="text"
-                  name="cname"
+                  name="firstname"
                   required
-                  placeholder="Tacos el Rancho"
-              /></label>
+                  placeholder="John"
+                />
+              </label>
+            </div>
+            <div class="lastname">
+              <label class="top">
+                Last Name*
+                <input
+                  class="box"
+                  type="text"
+                  name="lastname"
+                  placeholder="Wick"
+                />
+              </label>
+            </div>
+
+            <div class="title">
+              <label class="top">
+                Title
+                <input
+                  class="box"
+                  type="text"
+                  name="title"
+                  placeholder="Manager"
+                />
+              </label>
             </div>
 
             <div class="email">
@@ -104,14 +107,37 @@
 
             <div class="phone">
               <label class="top">
-                Phone Number*
+                Cellphone Number
                 <input
                   class="box"
                   type="tel"
                   name="phone"
                   placeholder="1234445566"
-                  required
               /></label>
+            </div>
+
+            <div class="name">
+              <label class="top">
+                Business Name*
+                <input
+                  class="box"
+                  type="text"
+                  name="cname"
+                  required
+                  placeholder="Tacos el Rancho"
+              /></label>
+            </div>
+
+            <div class="address">
+              <label class="top">
+                Address
+                <input
+                  class="box"
+                  type="text"
+                  name="address"
+                  placeholder="123 Main St., Middleton, ID, 83644"
+                />
+              </label>
             </div>
 
             <div class="website">
@@ -126,87 +152,21 @@
               /></label>
             </div>
           </div>
-          <!-- physical address -->
-          <div class="address">
-            <h3>Physical Address</h3>
+          <!-- bussines description -->
+          <div class="description">
+            <h3>Business Description</h3>
           </div>
-          <div class="flex">
-            <div class="addressone">
-              <label class="top">
-                Address line 1*
-                <input
-                  class="box"
-                  type="text"
-                  name="address-one"
-                  required
-                  placeholder="123 Example Street"
-                />
-              </label>
-            </div>
-
-            <div class="address-two">
-              <label class="top">
-                Address line 2
-                <input
-                  class="box"
-                  type="text"
-                  name="addresstwo"
-                  placeholder="Suite 123"
-                />
-              </label>
-            </div>
-
-            <div class="city">
-              <label class="top">
-                City*
-                <input
-                  class="box"
-                  type="text"
-                  name="city"
-                  required
-                  placeholder="Middleton"
-                />
-              </label>
-            </div>
-
-            <div class="state">
-              <label class="top">
-                State*
-                <input
-                  class="box"
-                  type="text"
-                  name="state"
-                  required
-                  placeholder="Idaho"
-                />
-              </label>
-            </div>
-
-            <div class="zip">
-              <label class="top">
-                Zip Code*
-                <input
-                  class="box"
-                  type="text"
-                  name="zipcode"
-                  required
-                  placeholder="83644"
-              /></label>
-            </div>
-          </div>
-          <!-- mailing address -->
-          <div class="address">
-            <h3>Mailing Address</h3>
-          </div>
-
-          <div class="mailing">
-            <label>
-              <input
-                class="checkbox"
-                type="checkbox"
-                name="mailing"
-                value="yes"
-              /><span> Same as physical address</span>
+          <div>
+            <label class="top">
+              Please enter a description of you business
+              <textarea
+                class="text-area"
+                id="text-area"
+                name="text-area"
+                rows="5"
+                cols="33"
+              >
+              </textarea>
             </label>
           </div>
 
@@ -258,6 +218,92 @@
               /></label>
             </div>
           </div>
+          <!-- membership selection-->
+          <div class="membership-selection">
+            <h3>Mebership Selection</h3>
+          </div>
+          <div class="choose">
+            <div class="selection">
+              <label>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="selection"
+                  value="yes"
+                /><span> Non-Profit</span>
+              </label>
+              <label>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="selection"
+                  value="yes"
+                /><span> Bronze</span>
+              </label>
+              <label>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="selection"
+                  value="yes"
+                /><span> Silver</span>
+              </label>
+              <label>
+                <input
+                  class="radio"
+                  type="radio"
+                  name="selection"
+                  value="yes"
+                /><span> Gold</span>
+              </label>
+            </div>
+          </div>
+          <!-- levels -->
+          <div class="memberlevels">
+            <ul class="levels">
+              <li class="level-card1">
+                <h4>Non-Profit $100</h4>
+                <ul>
+                  <li>Join Our Annual Events</li>
+                  <li>Networking Events</li>
+                  <li>Promote & Advertise Your Business</li>
+                  <li>Business Services</li>
+                  <li>Committee Participation</li>
+                </ul>
+              </li>
+              <li class="level-card2">
+                <h4>Bronze $200</h4>
+                <ul>
+                  <li>Join Our Annual Events</li>
+                  <li>Networking Events</li>
+                  <li>Promote & Advertise Your Business</li>
+                  <li>Business Services</li>
+                  <li>Committee Participation</li>
+                </ul>
+              </li>
+              <li class="level-card3">
+                <h4>Silver $400</h4>
+                <ul>
+                  <li>Join Our Annual Events</li>
+                  <li>Networking Events</li>
+                  <li>Promote & Advertise Your Business</li>
+                  <li>Business Services</li>
+                  <li>Committee Participation</li>
+                </ul>
+              </li>
+              <li class="level-card4">
+                <h4>Gold $1,000</h4>
+                <ul>
+                  <li>Join Our Annual Events</li>
+                  <li>Networking Events</li>
+                  <li>Promote & Advertise Your Business</li>
+                  <li>Business Services</li>
+                  <li>Committee Participation</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
           <div class="submit">
             <input
               type="submit"

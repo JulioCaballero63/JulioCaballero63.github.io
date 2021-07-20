@@ -452,13 +452,6 @@ h3 {
     rgba(46, 53, 160, 0.973)
   );
 }
-.memberlevels h3 {
-  text-align: center;
-  font-family: "Roboto Slab", serif;
-  font-size: xx-large;
-  margin-bottom: 0;
-  padding: 0.5em 0;
-}
 
 main p {
   font-family: "Open Sans", sans-serif;
@@ -471,15 +464,17 @@ main p {
   flex-direction: column;
   justify-content: space-around;
   padding-bottom: 1em;
-  max-width: 40%;
 }
-.levels li {
+.levels .level-card1,
+.level-card2,
+.level-card3,
+.level-card4 {
   display: block;
   margin: 0.5em;
   padding: 1rem;
   text-align: center;
   color: rgba(243, 245, 243, 0.973);
-  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
   background: linear-gradient(
     to left,
@@ -489,6 +484,19 @@ main p {
   border-radius: 8px;
 }
 
+.levels h4 {
+  margin: 0 0 0.5em;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.5em;
+}
+.level-card1 li,
+.level-card2 li,
+.level-card3 li,
+.level-card4 li {
+  text-align: left;
+  padding-bottom: 0.5em;
+  margin: 0;
+}
 /* form */
 .form {
   display: flex;
@@ -496,7 +504,8 @@ main p {
   flex-wrap: wrap;
 }
 .member h3,
-.address h3 {
+.description h3,
+.membership-selection {
   background: linear-gradient(
     to right,
     rgba(14, 149, 190, 0.966),
@@ -521,18 +530,29 @@ main p {
   padding: 1em 0.3em;
   border-radius: 5px;
 }
+.text-area {
+  display: block;
+  width: 98%;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  padding: 1em 0.3em;
+  border-radius: 5px;
+}
 
-.mailing {
+.selection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 1em 0;
 }
 
-.mailing .checkbox {
+.selection .radio {
   transform: scale(2, 2);
-  margin-left: 0.5em;
+  margin: 0.7em 0.5em;
 }
-.mailing label span {
+.selection label span {
   font-family: "Open Sans", sans-serif;
-  padding: 1em 1em;
+  padding: 1em 0.5em;
 }
 form input.submitBtn {
   font-family: "Open Sans", sans-serif;

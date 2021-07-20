@@ -52,26 +52,25 @@
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
-  .addressone {
+  .firstname {
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
-  .address-two {
+  .lastname {
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
-  .city {
+  .title {
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
-  .state {
+  .address {
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
-  .zip {
-    flex: 1 1 40%;
-    margin: 0 0.5em;
-    max-width: 40%;
+  .text-area {
+    margin: 0;
+    max-width: 100%;
   }
   .facebook {
     flex: 1 1 40%;
@@ -88,5 +87,25 @@
   .linkedin {
     flex: 1 1 40%;
     margin: 0 0.5em;
+  }
+  .selection {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .levels {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .level-card1 {
+    flex: 1 0 40%;
+  }
+  .level-card2 {
+    flex: 1 0 40%;
+  }
+  .level-card3 {
+    flex: 1 0 40%;
+  }
+  .level-card4 {
+    flex: 1 0 40%;
   }
 }

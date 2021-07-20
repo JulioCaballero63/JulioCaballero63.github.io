@@ -52,4 +52,41 @@
     flex: 1 1 40%;
     margin: 0 0.5em;
   }
+  .addressone {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .address-two {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .city {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .state {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .zip {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+    max-width: 40%;
+  }
+  .facebook {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .twitter {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .instagram {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
+  .linkedin {
+    flex: 1 1 40%;
+    margin: 0 0.5em;
+  }
 }

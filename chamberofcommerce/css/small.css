@@ -547,3 +547,6 @@ form input.submitBtn {
   width: 96%;
   max-width: 18rem;
 }
+.submit {
+  text-align: center;
+}

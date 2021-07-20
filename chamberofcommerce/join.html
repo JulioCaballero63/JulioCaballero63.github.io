@@ -71,9 +71,9 @@
         activated upon receipt of payment. *Dues cover a full twelve month
         period and are automatically invoiced on your anniversary date.
       </p>
-      <!-- <form method="get" action="#"> -->
+
       <div class="form">
-        <form action="middleton.html">
+        <form method="get" action="submit.html">
           <div class="member">
             <h2>Member Info</h2>
           </div>
@@ -130,70 +130,70 @@
           <div class="address">
             <h2>Physical Address</h2>
           </div>
+          <div class="flex">
+            <div class="addressone">
+              <label class="top">
+                Address line 1*
+                <input
+                  class="box"
+                  type="text"
+                  name="address-one"
+                  required
+                  placeholder="123 Example Street"
+                />
+              </label>
+            </div>
 
-          <div class="addressone">
-            <label class="top">
-              Address line 1*
-              <input
-                class="box"
-                type="text"
-                name="address-one"
-                required
-                placeholder="123 Example Street"
-              />
-            </label>
+            <div class="address-two">
+              <label class="top">
+                Address line 2
+                <input
+                  class="box"
+                  type="text"
+                  name="addresstwo"
+                  placeholder="Suite 123"
+                />
+              </label>
+            </div>
+
+            <div class="city">
+              <label class="top">
+                City*
+                <input
+                  class="box"
+                  type="text"
+                  name="city"
+                  required
+                  placeholder="Middleton"
+                />
+              </label>
+            </div>
+
+            <div class="state">
+              <label class="top">
+                State*
+                <input
+                  class="box"
+                  type="text"
+                  name="state"
+                  required
+                  placeholder="Idaho"
+                />
+              </label>
+            </div>
+
+            <div class="zip">
+              <label class="top">
+                Zip Code*
+                <input
+                  class="box"
+                  type="text"
+                  name="zipcode"
+                  required
+                  placeholder="83644"
+              /></label>
+            </div>
           </div>
-
-          <div class="address-two">
-            <label class="top">
-              Address line 2
-              <input
-                class="box"
-                type="text"
-                name="addresstwo"
-                placeholder="Suite 123"
-              />
-            </label>
-          </div>
-
-          <div class="city">
-            <label class="top">
-              City*
-              <input
-                class="box"
-                type="text"
-                name="city"
-                required
-                placeholder="Middleton"
-              />
-            </label>
-          </div>
-
-          <div class="state">
-            <label class="top">
-              State*
-              <input
-                class="box"
-                type="text"
-                name="state"
-                required
-                placeholder="Idaho"
-              />
-            </label>
-          </div>
-
-          <div class="zip">
-            <label class="top">
-              Zip Code*
-              <input
-                class="box"
-                type="text"
-                name="zipcode"
-                required
-                placeholder="83644"
-            /></label>
-          </div>
-
           <!-- mailing address -->
           <div class="address">
             <h2>Mailing Address</h2>
@@ -214,54 +214,57 @@
           <div class="member">
             <h2>Social Network Links</h2>
           </div>
+          <div class="flex">
+            <div class="facebook">
+              <label class="top">
+                Facebook
+                <input
+                  class="box"
+                  type="text"
+                  name="facebook"
+                  placeholder="https://facebook.com"
+              /></label>
+            </div>
+            <div class="twitter">
+              <label class="top">
+                Twitter
+                <input
+                  class="box"
+                  type="text"
+                  name="twitter"
+                  placeholder="https://twitter.com"
+              /></label>
+            </div>
 
-          <div class="facebook">
-            <label class="top">
-              Facebook
-              <input
-                class="box"
-                type="text"
-                name="facebook"
-                placeholder="https://facebook.com"
-            /></label>
-          </div>
-          <div class="twitter">
-            <label class="top">
-              Twitter
-              <input
-                class="box"
-                type="text"
-                name="twitter"
-                placeholder="https://twitter.com"
-            /></label>
-          </div>
+            <div class="instagram">
+              <label class="top">
+                Instagram
+                <input
+                  class="box"
+                  type="text"
+                  name="instagram"
+                  placeholder="https://instagram.com"
+              /></label>
+            </div>
 
-          <div class="instagram">
-            <label class="top">
-              Instagram
-              <input
-                class="box"
-                type="text"
-                name="instagram"
-                placeholder="https://instagram.com"
-            /></label>
+            <div class="linkedin">
+              <label class="top">
+                Linkedin
+                <input
+                  class="box"
+                  type="text"
+                  name="linkedin"
+                  placeholder="https://linkedin.com"
+              /></label>
+            </div>
           </div>
-
-          <div class="linkedin">
-            <label class="top">
-              Linkedin
-              <input
-                class="box"
-                type="text"
-                name="linkedin"
-                placeholder="https://linkedin.com"
-            /></label>
+          <div class="submit">
+            <input
+              type="submit"
+              value="Submit Member Application"
+              class="submitBtn"
+            />
           </div>
-          <input
-            type="submit"
-            value="Submit Member Application"
-            class="submitBtn"
-          />
         </form>
       </div>
     </main>

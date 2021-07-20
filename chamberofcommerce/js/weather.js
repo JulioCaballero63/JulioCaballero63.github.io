@@ -10,7 +10,7 @@ fetch(apiURL)
     document.querySelector("#humidity").innerHTML = jsObject.current.humidity;
     // alerts
     if (jsObject.alerts.length >= 1) {
-      document.querySelector(".banner").style.display = "block";
+      document.querySelector(".banner").style.display = "flex";
 
       for (i = 0; i < jsObject.alerts.length; i++) {
         document.querySelector("#banner").innerHTML = jsObject.alerts[i].event;

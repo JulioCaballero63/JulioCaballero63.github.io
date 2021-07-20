@@ -15,4 +15,15 @@
   .cards {
     flex-direction: row;
   }
+  /* article */
+  .article h3,
+  p {
+    position: relative;
+    width: 100%;
+  }
+
+  main .article figure.article-pic {
+    width: 50%;
+    float: right;
+  }
 }

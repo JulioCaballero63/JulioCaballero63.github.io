@@ -458,6 +458,10 @@ h3 {
   margin-bottom: 0;
   padding-bottom: 0.5em;
 }
+
+main p {
+  font-family: "Open Sans", sans-serif;
+}
 .levels {
   list-style-type: none;
   padding: 0.5em;
@@ -505,7 +509,6 @@ h3 {
 }
 
 .top {
-  background-color: aquamarine;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 1em;
 }
@@ -515,4 +518,19 @@ h3 {
   margin-top: 0.5em;
   margin-bottom: 1.5em;
   padding: 1em 0.3em;
+  border-color: rgba(94, 131, 57, 0.432);
+  border-radius: 5px;
+}
+
+.mailing {
+  padding: 1em 0;
+}
+
+.mailing .checkbox {
+  transform: scale(2, 2);
+  margin-left: 0.5em;
+}
+.mailing label span {
+  font-family: "Open Sans", sans-serif;
+  padding: 1em 1em;
 }

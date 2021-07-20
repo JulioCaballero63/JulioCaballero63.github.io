@@ -10,7 +10,7 @@ font-family: 'Roboto Slab', serif; */
 
 /* weather alerts */
 .banner {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   padding: 1em;

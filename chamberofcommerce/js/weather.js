@@ -2,14 +2,17 @@ const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=43.70&lon=-1
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
+    console.log(jsObject);
     document.querySelector("#currently").innerHTML =
       jsObject.current.weather[0].description;
     document.querySelector("#temp").innerHTML = Math.round(
       jsObject.current.temp
     );
     document.querySelector("#humidity").innerHTML = jsObject.current.humidity;
-    // alerts
-    if (jsObject.alerts.length >= 1) {
+    // // alerts
+
+    // if (jsObject.alerts.length >= 1)
+    if (jsObject.alerts == true) {
       document.querySelector(".banner").style.display = "flex";
 
       for (i = 0; i < jsObject.alerts.length; i++) {

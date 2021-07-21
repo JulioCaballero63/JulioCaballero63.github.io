@@ -572,3 +572,38 @@ form input.submitBtn {
 .submit {
   text-align: center;
 }
+/* directory */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container ul li {
+  margin: 1rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.966);
+  border-radius: 4px;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.993),
+    rgba(116, 224, 219, 0.89)
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.966);
+}
+.company hr,
+.row {
+  margin: 0.5em 1em;
+}
+
+.company-name {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.row {
+  font-family: "Open Sans", sans-serif;
+  margin-left: 1em;
+}

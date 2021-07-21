@@ -430,7 +430,10 @@ main .article figure.article-pic .articleimg {
   font-family: "Roboto Slab", serif;
   padding-top: 1em;
 }
-
+.article h3 {
+  color: black;
+  text-align: left;
+}
 .article h2,
 p,
 h3 {

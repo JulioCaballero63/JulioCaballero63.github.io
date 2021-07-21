@@ -607,3 +607,7 @@ form input.submitBtn {
   font-family: "Open Sans", sans-serif;
   margin-left: 1em;
 }
+/* grid to list */
+.display {
+  display: none;
+}

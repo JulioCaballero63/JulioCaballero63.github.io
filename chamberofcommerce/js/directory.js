@@ -39,3 +39,24 @@ fetch(requestURL)
       document.querySelector(".business-cards").appendChild(card);
     }
   });
+
+// change view
+
+const grid = document.querySelector(".grid");
+const cards = document.querySelector(".business-cards");
+grid.addEventListener(
+  "click",
+  () => {
+    cards.classList.add("grid-view");
+  },
+  false
+);
+
+const list = document.querySelector(".list");
+list.addEventListener(
+  "click",
+  () => {
+    cards.classList.remove("grid-view");
+  },
+  false
+);

@@ -606,6 +606,7 @@ form input.submitBtn {
 .row {
   font-family: "Open Sans", sans-serif;
   margin-left: 1em;
+  text-align: center;
 }
 /* grid to list */
 .display {

@@ -5,9 +5,6 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
-    console.log(jsonObject.length); // temporary checking for valid response and data parsing
-
     for (let i = 0; i < jsonObject.length; i++) {
       let card = document.createElement("li");
       let h2 = document.createElement("h2");

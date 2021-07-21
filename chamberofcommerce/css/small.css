@@ -612,3 +612,11 @@ form input.submitBtn {
 .display {
   display: none;
 }
+/* contact */
+.boardofdirectors h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+  color: rgba(9, 3, 95, 0.945);
+  text-align: center;
+  margin-bottom: 0;
+}

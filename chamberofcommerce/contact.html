@@ -47,7 +47,117 @@
         </ul>
       </nav>
     </div>
-    <main></main>
+    <main>
+      <!-- cards -->
+      <div class="boardofdirectors">
+        <h2>Board of Directors</h2>
+        <div class="cards">
+          <div class="section">
+            <figure>
+              <img class="ads" src="images/thanos.jpg" alt="tannos marvel" />
+              <figcaption>
+                <h3>Thanos</h3>
+                <p>Executive Director</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="section">
+            <figure>
+              <img class="ads" src="images/thor.jpg" alt="thor marvel" />
+              <figcaption>
+                <h3>Thor Odinson</h3>
+                <p>Secretary</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="section">
+            <figure>
+              <img class="ads" src="images/batman.jpg" alt="batman" />
+              <figcaption>
+                <h3>Batman</h3>
+                <p>Treasurer</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+<!-- contact us form -->
+      <div class="form">
+        <form method="get" action="comment.html">
+          <div class="member">
+            <h3>Contact Us</h3>
+          </div>
+          <div class="flex">
+            <div class="firstname">
+              <label class="top">
+                Full Name*
+                <input
+                  class="box"
+                  type="text"
+                  name="firstname"
+                  required
+                  placeholder="John"
+                />
+              </label>
+            </div>
+            <div class="lastname">
+              <label class="top">
+                Last Name*
+                <input
+                  class="box"
+                  type="text"
+                  name="lastname"
+                  placeholder="Wick"
+                />
+              </label>
+            </div>
+
+            <div class="phone">
+              <label class="top">
+                Cellphone Number
+                <input
+                  class="box"
+                  type="tel"
+                  name="phone"
+                  placeholder="1234445566"
+              /></label>
+            </div>
+
+            <div class="email">
+              <label class="top">
+                Email*
+                <input
+                  class="box"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="someone@hotmail.com"
+              /></label>
+            </div>
+
+            <div>
+              <label class="top">
+                Please leave a comment
+                <textarea
+                  class="text-area"
+                  id="text-area"
+                  name="text-area"
+                  rows="5"
+                  cols="33"
+                >
+                </textarea>
+              </label>
+            </div>
+            <div class="submit">
+              <input
+                type="submit"
+                value="Submit your comment"
+                class="submitBtn"
+              />
+            </div>
+          </form>
+</div>
+    </main>
     <footer>
       <p>&copy;| Middleton Chamber of Commerce |</p>
       <p class="date"><span id="date"></span></p>

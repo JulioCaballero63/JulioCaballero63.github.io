@@ -2,7 +2,7 @@ const apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=43.70&lon=-1
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    // console.log(jsObject);
     document.querySelector("#currently").innerHTML =
       jsObject.current.weather[0].description;
     document.querySelector("#temp").innerHTML = Math.round(
@@ -10,14 +10,14 @@ fetch(apiURL)
     );
     document.querySelector("#humidity").innerHTML = jsObject.current.humidity;
     // // alerts
-
-    // if (jsObject.alerts.length >= 1)
-    if (jsObject.alerts == true) {
+    if (jsObject.hasOwnProperty("alerts")) {
       document.querySelector(".banner").style.display = "flex";
 
       for (i = 0; i < jsObject.alerts.length; i++) {
         document.querySelector("#banner").innerHTML = jsObject.alerts[i].event;
       }
+    } else {
+      document.querySelector(".banner").style.display = "none";
     }
     const close = document.querySelector(".close");
     close.addEventListener("click", () => {

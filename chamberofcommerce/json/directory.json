@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tacos el Rancho",
+    "address": "103 W Main St, Middleton, ID, 83644",
+    "phone": "(208) 585-9962",
+    "website": "www.tacoselranchomexicanfood.com"
+  },
+  {
+    "name": "Ridleys Family Market",
+    "address": "430 E Main St, Middleton, ID 83644",
+    "phone": "(208) 585-3043",
+    "website": "www.shopridlyes.com"
+  },
+  {
+    "name": "Zamzows",
+    "address": "901 W Main St, Middleton, ID 83644",
+    "phone": "(280) 585-0041",
+    "website": "www.zamzows.com"
+  },
+  {
+    "name": "Family Dollar",
+    "address": "206 E Main St, Middleton, ID 83644",
+    "phone": "(208) 513-2299",
+    "website": "www.familydollar.com"
+  },
+  {
+    "name": "Tractor Supply Co",
+    "address": "1500 W Main St, Middleton, ID 83644",
+    "phone": "(208) 585-9800",
+    "website": "www.tractorsupply.com"
+  },
+  {
+    "name": "KRAVZ",
+    "address": "318 W Main St, Middleton, ID 83644",
+    "phone": "(208) 917-7900",
+    "website": "www.kravz.business.site"
+  },
+  {
+    "name": "Perfection Tire and Auto Repair",
+    "address": "1400 W Main St, Middleton, ID 83644",
+    "phone": "(208) 585-9888",
+    "website": "www.perfectiontire.com"
+  }
+]

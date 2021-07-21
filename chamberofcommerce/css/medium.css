@@ -141,4 +141,8 @@
   .list:hover {
     color: rgba(0, 0, 255, 0.973);
   }
+
+  .comment-area {
+    flex: 0 1 50%;
+  }
 }
